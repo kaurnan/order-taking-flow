@@ -1,0 +1,344 @@
+{
+	"templates": {
+		"flow_installation": {
+			"title": "Flow Installation Completed",
+			"description": "{{flowName}} has been successfully installed.",
+			"icon": "",
+			"type": "flowstore",
+			"link_template": "/campaigns/create_campaign?id={{campaignId}}&name={{flowName}}&description={{flowDescription}}&start_date={{startDate}}&end_date={{endDate}}&flowId={{flowId}}&flowIds={{flowIds}}"
+		},
+		"new_contact": {
+			"title": "New Contact",
+			"description": "{{contactName}} has been added to your contacts.",
+			"icon": "new_chat",
+			"type": "flowstore",
+			"link_template": "/chat?id={{contactId}}"
+		},
+		"bulk_action_success": {
+			"title": "{{actionTitle}}",
+			"description": "{{successMessage}}",
+			"icon": "{{userImage}}",
+			"type": "customers",
+			"link_template": "{{fileUrl}}"
+		},
+		"customer_export_success": {
+			"title": "Customers exported successfully",
+			"description": "Use the link to access the file, <a href=\"{{fileUrl}}\">view details</a>",
+			"icon": "{{userImage}}",
+			"type": "export_history",
+			"link_template": "{{fileUrl}}"
+		},
+		"customer_export_queued": {
+			"title": "Customers export queued",
+			"description": "{{successMessage}}",
+			"icon": "{{userImage}}",
+			"type": "export_history",
+			"link_template": ""
+		},
+		"no_customer_to_export": {
+			"title": "No Customers to Export",
+			"description": "There are no customers available for export.",
+			"icon": "info",
+			"type": "export_history",
+			"link_template": ""
+		},
+		"whatsapp_template_status": {
+			"title": "WhatsApp Template Status Update",
+			"description": "Template \"{{templateName}}\" (WABA: {{wabaId}}, Category: {{category}}, Language: {{language}}) has been {{status}}.",
+			"icon": "{{statusIcon}}",
+			"type": "whatsapp_template",
+			"link_template": "/templates?id={{templateId}}"
+		},
+		"whatsapp_template_error": {
+			"title": "WhatsApp Template Status Update Error",
+			"description": "Failed to update template \"{{templateName}}\" status to {{status}}. Please check the template configuration.",
+			"icon": "error",
+			"type": "whatsapp_template_error",
+			"link_template": "/templates"
+		},
+		"timeline_event": {
+			"title": "{{eventTitle}}",
+			"description": "{{eventDetails}}",
+			"icon": "{{userImage}}",
+			"type": "customers",
+			"link_template": "{{eventLink}}"
+		},
+		"delete_template": {
+			"title": "Template Deleted",
+			"description": "Template \"{{templateName}}\" has been successfully deleted.",
+			"icon": "delete",
+			"type": "template_delete",
+			"link_template": "/templates"
+		},
+		"template_deletion_in_progress": {
+			"title": "Template Deletion in Progress",
+			"description": "Template \"{{templateName}}\" is being deleted. Please wait {{retryAfter}} before creating a new template with the same name, or use a different template name.",
+			"icon": "delete",
+			"type": "template_delete",
+			"link_template": "/templates"
+		},
+		"bulk_template_delete_completed": {
+			"title": "Bulk Template Deletion Completed",
+			"description": "Bulk deletion of {{totalTemplates}} templates has been completed. {{successfulCount}} templates were successfully deleted, {{failedCount}} failed.",
+			"icon": "delete",
+			"type": "template_delete",
+			"link_template": "/templates"
+		},
+
+		"bulk_template_delete_failed": {
+			"title": "Bulk Template Deletion Failed",
+			"description": "Bulk deletion of {{totalTemplates}} templates has failed. {{failedCount}} templates failed to delete. Please check the templates and try again.",
+			"icon": "error",
+			"type": "template_delete",
+			"link_template": "/templates"
+		},
+		"bulk_list_delete_completed": {
+			"title": "Bulk List Deletion Completed",
+			"description": "Successfully deleted {{totalLists}} lists. All associated customers have been updated.",
+			"icon": "delete",
+			"type": "list_delete",
+			"link_template": "/customers/lists"
+		},
+		"bulk_list_delete_failed": {
+			"title": "Bulk List Deletion Failed",
+			"description": "Failed to delete {{failedCount}} out of {{totalLists}} lists. Please check the list configuration and try again.",
+			"icon": "error",
+			"type": "list_delete",
+			"link_template": "/customers/lists"
+		},
+		"bulk_list_subscribe_completed": {
+			"title": "Bulk List Subscribe Completed",
+			"description": "Successfully subscribed {{customersUpdated}} customers from {{totalLists}} lists to all marketing channels (WhatsApp, SMS, Email).",
+			"icon": "check_circle",
+			"type": "list_subscribe",
+			"link_template": "/customers/lists"
+		},
+		"bulk_list_unsubscribe_completed": {
+			"title": "Bulk List Unsubscribe Completed",
+			"description": "Successfully unsubscribed {{customersUpdated}} customers from {{totalLists}} lists from all marketing channels (WhatsApp, SMS, Email).",
+			"icon": "unsubscribe",
+			"type": "list_unsubscribe",
+			"link_template": "/customers/lists"
+		},
+		"bulk_segment_delete_completed": {
+			"title": "Bulk Segment Deletion Completed",
+			"description": "Successfully deleted {{totalSegments}} segments. All associated customers have been updated.",
+			"icon": "delete",
+			"type": "segment_delete",
+			"link_template": "/customers/segments"
+		},
+		"bulk_segment_delete_failed": {
+			"title": "Bulk Segment Deletion Failed",
+			"description": "Failed to delete {{failedCount}} out of {{totalSegments}} segments. Please check the segment configuration and try again.",
+			"icon": "error",
+			"type": "segment_delete",
+			"link_template": "/customers/segments"
+		},
+		"bulk_segment_subscribe_completed": {
+			"title": "Bulk Segment Subscribe Completed",
+			"description": "Successfully subscribed {{customersUpdated}} customers from {{totalSegments}} segments to all marketing channels (WhatsApp, SMS, Email).",
+			"icon": "check_circle",
+			"type": "segment_subscribe",
+			"link_template": "/customers/segments"
+		},
+		"bulk_segment_unsubscribe_completed": {
+			"title": "Bulk Segment Unsubscribe Completed",
+			"description": "Successfully unsubscribed {{customersUpdated}} customers from {{totalSegments}} segments from all marketing channels (WhatsApp, SMS, Email).",
+			"icon": "unsubscribe",
+			"type": "segment_unsubscribe",
+			"link_template": "/customers/segments"
+		},
+		"customer_import_completed": {
+			"title": "Import completed",
+			"description": "Successfully imported {{count}} out of {{total}}, <a href=\"/audience/import\">view details</a>",
+			"icon": "check_circle",
+			"type": "import_history",
+			"link_template": "/audience/import"
+		},
+		"merge_list_completed": {
+			"title": "List Merge Completed",
+			"description": "Successfully merged {{mergedCount}} customers into list \"{{destinationList}}\" ",
+			"icon": "merge",
+			"type": "list_merge",
+			"link_template": "/customers/lists"
+		},
+		"merge_list_failed": {
+			"title": "List Merge Failed",
+			"description": "Failed to merge lists: {{error}}. Please check the list configuration and try again.",
+			"icon": "error",
+			"type": "list_merge",
+			"link_template": "/customers/lists"
+		},
+		"wallet_recharge_success": {
+			"title": "Wallet recharge successful",
+			"description": "Payment of {{currency}} {{amount}} via {{paymentGateway}} completed. Order: {{merchantOrderId}}.",
+			"icon": "check_circle",
+			"type": "wallet",
+			"link_template": "/settings/billing"
+		},
+		"wallet_recharge_failed": {
+			"title": "Wallet recharge failed",
+			"description": "Payment of {{currency}} {{amount}} via {{paymentGateway}} failed. Order: {{merchantOrderId}}. {{reason}}",
+			"icon": "error",
+			"type": "wallet",
+			"link_template": "/settings/billing"
+		},
+		"bulk_import_history_delete_completed": {
+			"title": "Bulk Import History Deletion Completed",
+			"description": "Successfully deleted {{deletedCount}} out of {{totalRecords}} import history records.",
+			"icon": "delete",
+			"type": "import_history_delete",
+			"link_template": "/audience/import"
+		},
+		"bulk_export_delete_completed": {
+			"title": "Bulk Export Deletion Completed",
+			"description": "Successfully deleted {{deletedCount}} out of {{totalRecords}} export records.",
+			"icon": "delete",
+			"type": "export_delete",
+			"link_template": "/audience/export"
+		},
+		"invoiceDownloadComplete": {
+			"title": "Invoice Download Ready",
+			"description": "Your requested invoice download is ready. <a href=\"{{downloadUrl}}\">Click here to download</a>.",
+			"icon": "download",
+			"type": "invoice",
+			"link_template": "{{downloadUrl}}"
+		},
+		"invoiceDownloadFailed": {
+			"title": "Invoice Download Failed",
+			"description": "Failed to generate your invoice download. Please try again. Error: {{error}}",
+			"icon": "error",
+			"type": "invoice",
+			"link_template": ""
+		},
+		"subscription_charged_success": {
+			"title": "Subscription Charged Successfully",
+			"description": "Your subscription for plan {{pricingPlanId}} has been successfully charged {{currency}} {{amount}}. Subscription ID: {{subscriptionId}}.",
+			"icon": "check_circle",
+			"type": "subscription",
+			"link_template": "/settings/billing"
+		},
+		"subscription_cancelled_success": {
+			"title": "Subscription Cancelled",
+			"description": "Your subscription for plan {{pricingPlanId}} (ID: {{subscriptionId}}) has been {{status}}.",
+			"icon": "error",
+			"type": "subscription",
+			"link_template": "/settings/billing"
+		},
+		"user_invitations_sent": {
+			"title": "User Invitations Sent",
+			"description": "Successfully sent invitations to {{count}} user(s) with role: {{role}}.",
+			"icon": "send",
+			"type": "invitation",
+			"link_template": "/team"
+		},
+		"user_invitations_already_sent": {
+			"title": "Invitations Already Sent",
+			"description": "All {{count}} user(s) were already invited to the organization with role: {{role}}.",
+			"icon": "info",
+			"type": "invitation",
+			"link_template": "/team"
+		},
+		"invitation_accepted": {
+			"title": "Invitation Accepted",
+			"description": "You have successfully accepted the organization invitation.",
+			"icon": "check_circle",
+			"type": "invitation_accepted",
+			"link_template": "/dashboard"
+		},
+		"back_in_stock_notification": {
+			"title": "Product Back in Stock",
+			"description": "Good news! {{product_name}} is back in stock. {{variant_info}} available now. Shop now: {{product_link}}",
+			"icon": "inventory",
+			"type": "back_in_stock",
+			"link_template": "{{product_link}}"
+		}
+	},
+	"bulk_actions": {
+		"subscribe_to_whatsapp": {
+			"title": "Subscribe to WhatsApp",
+			"success": "Successfully subscribed to WhatsApp.",
+			"failed": "Failed to subscribe to WhatsApp."
+		},
+		"unsubscribe_to_whatsapp": {
+			"title": "Unsubscribe from WhatsApp",
+			"success": "Successfully unsubscribed from WhatsApp.",
+			"failed": "Failed to unsubscribe from WhatsApp."
+		},
+		"add_to_list": {
+			"title": "Add to List",
+			"success": "{{no_of_customers}} customer's added to {{listname}}",
+			"failed": "Failed to add to the list."
+		},
+		"remove_from_list": {
+			"title": "Remove from List",
+			"success": "{{no_of_customers}} customer's removed from {{listname}}",
+			"failed": "Failed to remove from the list."
+		},
+		"add_tag": {
+			"title": "Add Tag",
+			"success": "Successfully added the tag.",
+			"failed": "Failed to add the tag."
+		},
+		"remove_tag": {
+			"title": "Remove Tag",
+			"success": "Successfully removed the tag.",
+			"failed": "Failed to remove the tag."
+		},
+		"add_to_segment": {
+			"title": "Add to Segment",
+			"success": "Successfully added to the segment.",
+			"failed": "Failed to add to the segment."
+		},
+		"remove_from_segment": {
+			"title": "Remove from Segment",
+			"success": "Successfully removed from the segment.",
+			"failed": "Failed to remove from the segment."
+		},
+		"subscribe_to_sms": {
+			"title": "Subscribe to SMS",
+			"success": "Successfully subscribed to SMS.",
+			"failed": "Failed to subscribe to SMS."
+		},
+		"unsubscribe_to_sms": {
+			"title": "Unsubscribe from SMS",
+			"success": "Successfully unsubscribed from SMS.",
+			"failed": "Failed to unsubscribe from SMS."
+		},
+		"subscribe_to_email": {
+			"title": "Subscribe to Email",
+			"success": "Successfully subscribed to email.",
+			"failed": "Failed to subscribe to email."
+		},
+		"unsubscribe_to_email": {
+			"title": "Unsubscribe from Email",
+			"success": "Successfully unsubscribed from email.",
+			"failed": "Failed to unsubscribe from email."
+		},
+		"subscribe_to_all_channels": {
+			"title": "Subscribe to All Channels",
+			"success": "Successfully subscribed to all channels.",
+			"failed": "Failed to subscribe to all channels."
+		},
+		"delete": {
+			"title": "Delete",
+			"success": "Successfully deleted.",
+			"failed": "Failed to delete."
+		},
+		"export": {
+			"title": "Export",
+			"success": "Successfully exported.",
+			"failed": "Failed to export."
+		},
+		"setphone": {
+			"title": "Set Default Send Phone",
+			"success": "Default send phone set successfully.",
+			"failed": "Failed to set default send phone."
+		}
+	},
+	"status_icons": {
+		"APPROVED": "check_circle",
+		"REJECTED": "error",
+		"PENDING": "pending"
+	}
+}

@@ -1,0 +1,716 @@
+[
+	{
+		"name": "Basic Plan",
+		"slug": "basic",
+		"type": "subscription",
+		"pricing": 23999,
+		"currency": "INR",
+		"billing_cycle": "yearly",
+		"pg": "razorpay",
+		"desc": "For small teams getting started",
+		"features": [
+			{
+				"name": "CTWA - Ads that click to WhatsApp",
+				"description": "Create ads that click to WhatsApp",
+				"included": true,
+				"limit": -1,
+				"unit": "count",
+				"category": "marketing"
+			},
+			{
+				"name": "Bulk broadcast",
+				"description": "Send bulk messages to your audience",
+				"included": true,
+				"limit": -1,
+				"unit": "count",
+				"category": "marketing"
+			},
+			{
+				"name": "Opt-in facilitation",
+				"description": "Unlimited opt-in facilitation",
+				"included": true,
+				"limit": -1,
+				"unit": "opt-ins",
+				"category": "marketing"
+			},
+			{
+				"name": "Drip marketing",
+				"description": "Unlimited drip marketing campaigns",
+				"included": true,
+				"limit": -1,
+				"unit": "campaigns",
+				"category": "marketing"
+			},
+			{
+				"name": "Reply configuration",
+				"description": "Unlimited reply configuration",
+				"included": true,
+				"limit": -1,
+				"unit": "configurations",
+				"category": "marketing"
+			},
+			{
+				"name": "Segmentation",
+				"description": "Unlimited creation of customer segments",
+				"included": true,
+				"limit": -1,
+				"unit": "segments",
+				"category": "segmentation"
+			},
+			{
+				"name": "Blue Tick Assistance",
+				"description": "Get assistance with WhatsApp Business verification",
+				"included": true,
+				"limit": -1,
+				"unit": "count",
+				"category": "other"
+			},
+			{
+				"name": "WhatsApp Catalog",
+				"description": "Create and manage your WhatsApp product catalog",
+				"included": true,
+				"limit": -1,
+				"unit": "count",
+				"category": "other"
+			}
+		],
+		"limits": {
+			"users": 3,
+			"additional_user_cost": 15,
+			"branches": 1,
+			"additional_branch_cost": 15,
+			"workflows": 3,
+			"test_workflows": -1,
+			"channels": 1,
+			"additional_channel_cost": 14,
+			"storage": 5,
+			"api_calls": 5000,
+			"messages": 1000,
+			"integrations": 2,
+			"custom_fields": 10,
+			"templates": 20
+		},
+		"plan_id": {
+			"stripe": "price_basic_001",
+			"razorpay": "plan_R9VOgGcErSWmz3"
+		},
+		"is_popular": false,
+		"is_active": true,
+		"sort_order": 1,
+		"trial_days": 14,
+		"setup_fee": 0,
+		"discount_percentage": 0,
+		"yearly_discount_percentage": 20
+	},
+	{
+		"name": "Growth Plan",
+		"slug": "growth",
+		"type": "subscription",
+		"pricing": 57499,
+		"currency": "INR",
+		"billing_cycle": "yearly",
+		"pg": "razorpay",
+		"desc": "For growing businesses with more users and features",
+		"features": [
+			{
+				"name": "CTWA - Ads that click to WhatsApp",
+				"description": "Create ads that click to WhatsApp",
+				"included": true,
+				"limit": -1,
+				"unit": "count",
+				"category": "marketing"
+			},
+			{
+				"name": "Bulk broadcast",
+				"description": "Send bulk messages to your audience",
+				"included": true,
+				"limit": -1,
+				"unit": "count",
+				"category": "marketing"
+			},
+			{
+				"name": "Opt-in facilitation",
+				"description": "Unlimited opt-in facilitation",
+				"included": true,
+				"limit": -1,
+				"unit": "opt-ins",
+				"category": "marketing"
+			},
+			{
+				"name": "Drip marketing",
+				"description": "Unlimited drip marketing campaigns",
+				"included": true,
+				"limit": -1,
+				"unit": "campaigns",
+				"category": "marketing"
+			},
+			{
+				"name": "Reply configuration",
+				"description": "Unlimited reply configuration",
+				"included": true,
+				"limit": -1,
+				"unit": "configurations",
+				"category": "marketing"
+			},
+			{
+				"name": "Segmentation",
+				"description": "Unlimited creation of customer segments",
+				"included": true,
+				"limit": -1,
+				"unit": "segments",
+				"category": "segmentation"
+			},
+			{
+				"name": "Blue Tick Assistance",
+				"description": "Get assistance with WhatsApp Business verification",
+				"included": true,
+				"limit": -1,
+				"unit": "count",
+				"category": "other"
+			},
+			{
+				"name": "WhatsApp Catalog",
+				"description": "Create and manage your WhatsApp product catalog",
+				"included": true,
+				"limit": -1,
+				"unit": "count",
+				"category": "other"
+			},
+			{
+				"name": "WhatsApp Flows & Forms",
+				"description": "Create interactive flows and forms",
+				"included": true,
+				"limit": -1,
+				"unit": "count",
+				"category": "other"
+			},
+			{
+				"name": "AI Flow Node",
+				"description": "Advanced AI-powered workflow automation",
+				"included": true,
+				"limit": -1,
+				"unit": "count",
+				"category": "other"
+			},
+			{
+				"name": "Support Group on WhatsApp",
+				"description": "Dedicated support group access",
+				"included": true,
+				"limit": -1,
+				"unit": "count",
+				"category": "other"
+			}
+		],
+		"limits": {
+			"users": 8,
+			"additional_user_cost": 12,
+			"branches": 3,
+			"additional_branch_cost": 10,
+			"workflows": 5,
+			"test_workflows": -1,
+			"channels": 1,
+			"additional_channel_cost": 12,
+			"storage": 20,
+			"api_calls": 15000,
+			"messages": 5000,
+			"integrations": 5,
+			"custom_fields": 25,
+			"templates": 50
+		},
+		"plan_id": {
+			"stripe": "price_growth_002",
+			"razorpay": "plan_R9VPgfT6zZW0p0"
+		},
+		"is_popular": true,
+		"is_active": true,
+		"sort_order": 2,
+		"trial_days": 14,
+		"setup_fee": 0,
+		"discount_percentage": 0,
+		"yearly_discount_percentage": 20
+	},
+	{
+		"name": "Scale Plan",
+		"slug": "scale",
+		"type": "subscription",
+		"pricing": 141499,
+		"currency": "INR",
+		"billing_cycle": "yearly",
+		"pg": "razorpay",
+		"desc": "For large teams and enterprises",
+		"features": [
+			{
+				"name": "CTWA - Ads that click to WhatsApp",
+				"description": "Create ads that click to WhatsApp",
+				"included": true,
+				"limit": -1,
+				"unit": "count",
+				"category": "marketing"
+			},
+			{
+				"name": "Bulk broadcast",
+				"description": "Send bulk messages to your audience",
+				"included": true,
+				"limit": -1,
+				"unit": "count",
+				"category": "marketing"
+			},
+			{
+				"name": "Opt-in facilitation",
+				"description": "Unlimited opt-in facilitation",
+				"included": true,
+				"limit": -1,
+				"unit": "opt-ins",
+				"category": "marketing"
+			},
+			{
+				"name": "Drip marketing",
+				"description": "Unlimited drip marketing campaigns",
+				"included": true,
+				"limit": -1,
+				"unit": "campaigns",
+				"category": "marketing"
+			},
+			{
+				"name": "Reply configuration",
+				"description": "Unlimited reply configuration",
+				"included": true,
+				"limit": -1,
+				"unit": "configurations",
+				"category": "marketing"
+			},
+			{
+				"name": "Segmentation",
+				"description": "Unlimited creation of customer segments",
+				"included": true,
+				"limit": -1,
+				"unit": "segments",
+				"category": "segmentation"
+			},
+			{
+				"name": "Blue Tick Assistance",
+				"description": "Get assistance with WhatsApp Business verification",
+				"included": true,
+				"limit": -1,
+				"unit": "count",
+				"category": "other"
+			},
+			{
+				"name": "WhatsApp Catalog",
+				"description": "Create and manage your WhatsApp product catalog",
+				"included": true,
+				"limit": -1,
+				"unit": "count",
+				"category": "other"
+			},
+			{
+				"name": "WhatsApp Flows & Forms",
+				"description": "Create interactive flows and forms",
+				"included": true,
+				"limit": -1,
+				"unit": "count",
+				"category": "other"
+			},
+			{
+				"name": "AI Flow Node",
+				"description": "Advanced AI-powered workflow automation",
+				"included": true,
+				"limit": -1,
+				"unit": "count",
+				"category": "other"
+			},
+			{
+				"name": "Support Group on WhatsApp",
+				"description": "Dedicated support group access",
+				"included": true,
+				"limit": -1,
+				"unit": "count",
+				"category": "other"
+			}
+		],
+		"limits": {
+			"users": 12,
+			"additional_user_cost": 8,
+			"branches": 8,
+			"additional_branch_cost": 8,
+			"workflows": 8,
+			"test_workflows": -1,
+			"channels": 1,
+			"additional_channel_cost": 8,
+			"storage": 100,
+			"api_calls": 50000,
+			"messages": 15000,
+			"integrations": 10,
+			"custom_fields": 100,
+			"templates": 200
+		},
+		"plan_id": {
+			"stripe": "price_scale_003",
+			"razorpay": "plan_R9VQNM09K6CK0e"
+		},
+		"is_popular": false,
+		"is_active": true,
+		"sort_order": 3,
+		"trial_days": 14,
+		"setup_fee": 0,
+		"discount_percentage": 0,
+		"yearly_discount_percentage": 20
+	},
+	{
+		"name": "Scale Plan",
+		"slug": "scale",
+		"type": "subscription",
+		"pricing": 44499,
+		"currency": "INR",
+		"billing_cycle": "quarterly",
+		"pg": "razorpay",
+		"desc": "For large teams and enterprises",
+		"features": [
+			{
+				"name": "CTWA - Ads that click to WhatsApp",
+				"description": "Create ads that click to WhatsApp",
+				"included": true,
+				"limit": -1,
+				"unit": "count",
+				"category": "marketing"
+			},
+			{
+				"name": "Bulk broadcast",
+				"description": "Send bulk messages to your audience",
+				"included": true,
+				"limit": -1,
+				"unit": "count",
+				"category": "marketing"
+			},
+			{
+				"name": "Opt-in facilitation",
+				"description": "Unlimited opt-in facilitation",
+				"included": true,
+				"limit": -1,
+				"unit": "opt-ins",
+				"category": "marketing"
+			},
+			{
+				"name": "Drip marketing",
+				"description": "Unlimited drip marketing campaigns",
+				"included": true,
+				"limit": -1,
+				"unit": "campaigns",
+				"category": "marketing"
+			},
+			{
+				"name": "Reply configuration",
+				"description": "Unlimited reply configuration",
+				"included": true,
+				"limit": -1,
+				"unit": "configurations",
+				"category": "marketing"
+			},
+			{
+				"name": "Segmentation",
+				"description": "Unlimited creation of customer segments",
+				"included": true,
+				"limit": -1,
+				"unit": "segments",
+				"category": "segmentation"
+			},
+			{
+				"name": "Blue Tick Assistance",
+				"description": "Get assistance with WhatsApp Business verification",
+				"included": true,
+				"limit": -1,
+				"unit": "count",
+				"category": "other"
+			},
+			{
+				"name": "WhatsApp Catalog",
+				"description": "Create and manage your WhatsApp product catalog",
+				"included": true,
+				"limit": -1,
+				"unit": "count",
+				"category": "other"
+			},
+			{
+				"name": "WhatsApp Flows & Forms",
+				"description": "Create interactive flows and forms",
+				"included": true,
+				"limit": -1,
+				"unit": "count",
+				"category": "other"
+			},
+			{
+				"name": "AI Flow Node",
+				"description": "Advanced AI-powered workflow automation",
+				"included": true,
+				"limit": -1,
+				"unit": "count",
+				"category": "other"
+			},
+			{
+				"name": "Support Group on WhatsApp",
+				"description": "Dedicated support group access",
+				"included": true,
+				"limit": -1,
+				"unit": "count",
+				"category": "other"
+			}
+		],
+		"limits": {
+			"users": 12,
+			"additional_user_cost": 8,
+			"branches": 8,
+			"additional_branch_cost": 8,
+			"workflows": 8,
+			"test_workflows": -1,
+			"channels": 1,
+			"additional_channel_cost": 8,
+			"storage": 100,
+			"api_calls": 50000,
+			"messages": 15000,
+			"integrations": 10,
+			"custom_fields": 100,
+			"templates": 200
+		},
+		"plan_id": {
+			"stripe": "price_scale_003",
+			"razorpay": "plan_R9VNMW6pra8zHy"
+		},
+		"is_popular": false,
+		"is_active": true,
+		"sort_order": 3,
+		"trial_days": 14,
+		"setup_fee": 0,
+		"discount_percentage": 0,
+		"yearly_discount_percentage": 20
+	},
+	{
+		"name": "Growth Plan",
+		"slug": "growth",
+		"type": "subscription",
+		"pricing": 17999,
+		"currency": "INR",
+		"billing_cycle": "quarterly",
+		"pg": "razorpay",
+		"desc": "For growing businesses with more users and features",
+		"features": [
+			{
+				"name": "CTWA - Ads that click to WhatsApp",
+				"description": "Create ads that click to WhatsApp",
+				"included": true,
+				"limit": -1,
+				"unit": "count",
+				"category": "marketing"
+			},
+			{
+				"name": "Bulk broadcast",
+				"description": "Send bulk messages to your audience",
+				"included": true,
+				"limit": -1,
+				"unit": "count",
+				"category": "marketing"
+			},
+			{
+				"name": "Opt-in facilitation",
+				"description": "Unlimited opt-in facilitation",
+				"included": true,
+				"limit": -1,
+				"unit": "opt-ins",
+				"category": "marketing"
+			},
+			{
+				"name": "Drip marketing",
+				"description": "Unlimited drip marketing campaigns",
+				"included": true,
+				"limit": -1,
+				"unit": "campaigns",
+				"category": "marketing"
+			},
+			{
+				"name": "Reply configuration",
+				"description": "Unlimited reply configuration",
+				"included": true,
+				"limit": -1,
+				"unit": "configurations",
+				"category": "marketing"
+			},
+			{
+				"name": "Segmentation",
+				"description": "Unlimited creation of customer segments",
+				"included": true,
+				"limit": -1,
+				"unit": "segments",
+				"category": "segmentation"
+			},
+			{
+				"name": "Blue Tick Assistance",
+				"description": "Get assistance with WhatsApp Business verification",
+				"included": true,
+				"limit": -1,
+				"unit": "count",
+				"category": "other"
+			},
+			{
+				"name": "WhatsApp Catalog",
+				"description": "Create and manage your WhatsApp product catalog",
+				"included": true,
+				"limit": -1,
+				"unit": "count",
+				"category": "other"
+			},
+			{
+				"name": "WhatsApp Flows & Forms",
+				"description": "Create interactive flows and forms",
+				"included": true,
+				"limit": -1,
+				"unit": "count",
+				"category": "other"
+			},
+			{
+				"name": "AI Flow Node",
+				"description": "Advanced AI-powered workflow automation",
+				"included": true,
+				"limit": -1,
+				"unit": "count",
+				"category": "other"
+			},
+			{
+				"name": "Support Group on WhatsApp",
+				"description": "Dedicated support group access",
+				"included": true,
+				"limit": -1,
+				"unit": "count",
+				"category": "other"
+			}
+		],
+		"limits": {
+			"users": 8,
+			"additional_user_cost": 12,
+			"branches": 3,
+			"additional_branch_cost": 10,
+			"workflows": 5,
+			"test_workflows": -1,
+			"channels": 1,
+			"additional_channel_cost": 12,
+			"storage": 20,
+			"api_calls": 15000,
+			"messages": 5000,
+			"integrations": 5,
+			"custom_fields": 25,
+			"templates": 50
+		},
+		"plan_id": {
+			"stripe": "price_growth_002",
+			"razorpay": "plan_R9VMIZlRFXEIpt"
+		},
+		"is_popular": true,
+		"is_active": true,
+		"sort_order": 2,
+		"trial_days": 14,
+		"setup_fee": 0,
+		"discount_percentage": 0,
+		"yearly_discount_percentage": 20
+	},
+	{
+		"name": "Basic Plan",
+		"slug": "basic",
+		"type": "subscription",
+		"pricing": 7499,
+		"currency": "INR",
+		"billing_cycle": "quarterly",
+		"pg": "razorpay",
+		"desc": "For small teams getting started",
+		"features": [
+			{
+				"name": "CTWA - Ads that click to WhatsApp",
+				"description": "Create ads that click to WhatsApp",
+				"included": true,
+				"limit": -1,
+				"unit": "count",
+				"category": "marketing"
+			},
+			{
+				"name": "Bulk broadcast",
+				"description": "Send bulk messages to your audience",
+				"included": true,
+				"limit": -1,
+				"unit": "count",
+				"category": "marketing"
+			},
+			{
+				"name": "Opt-in facilitation",
+				"description": "Unlimited opt-in facilitation",
+				"included": true,
+				"limit": -1,
+				"unit": "opt-ins",
+				"category": "marketing"
+			},
+			{
+				"name": "Drip marketing",
+				"description": "Unlimited drip marketing campaigns",
+				"included": true,
+				"limit": -1,
+				"unit": "campaigns",
+				"category": "marketing"
+			},
+			{
+				"name": "Reply configuration",
+				"description": "Unlimited reply configuration",
+				"included": true,
+				"limit": -1,
+				"unit": "configurations",
+				"category": "marketing"
+			},
+			{
+				"name": "Segmentation",
+				"description": "Unlimited creation of customer segments",
+				"included": true,
+				"limit": -1,
+				"unit": "segments",
+				"category": "segmentation"
+			},
+			{
+				"name": "Blue Tick Assistance",
+				"description": "Get assistance with WhatsApp Business verification",
+				"included": true,
+				"limit": -1,
+				"unit": "count",
+				"category": "other"
+			},
+			{
+				"name": "WhatsApp Catalog",
+				"description": "Create and manage your WhatsApp product catalog",
+				"included": true,
+				"limit": -1,
+				"unit": "count",
+				"category": "other"
+			}
+		],
+		"limits": {
+			"users": 3,
+			"additional_user_cost": 15,
+			"branches": 1,
+			"additional_branch_cost": 15,
+			"workflows": 3,
+			"test_workflows": -1,
+			"channels": 1,
+			"additional_channel_cost": 14,
+			"storage": 5,
+			"api_calls": 5000,
+			"messages": 1000,
+			"integrations": 2,
+			"custom_fields": 10,
+			"templates": 20
+		},
+		"plan_id": {
+			"stripe": "price_basic_001",
+			"razorpay": "plan_R9VKZ6eiCxIhe5"
+		},
+		"is_popular": false,
+		"is_active": true,
+		"sort_order": 1,
+		"trial_days": 14,
+		"setup_fee": 0,
+		"discount_percentage": 0,
+		"yearly_discount_percentage": 20
+	}
+]

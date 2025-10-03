@@ -1,0 +1,4673 @@
+[
+	{
+		"type": "app_shopify",
+		"title": "Shopify",
+		"description": "Integrate Shopify with Reviewbit Flows using the GraphQL-based API.",
+		"events": [
+			{
+				"topic": "shopify_carts_create",
+				"title": "Cart created",
+				"description": "Workflow starts when a new cart is created",
+				"sample_payload": {
+					"id": "eeafa272cebfd4b22385bc4b645e762c",
+					"token": "eeafa272cebfd4b22385bc4b645e762c",
+					"line_items": [
+						{
+							"id": {
+								"low": 1947586560,
+								"high": 164125162,
+								"unsigned": false
+							},
+							"properties": {},
+							"quantity": 3,
+							"variant_id": {
+								"low": 1947586560,
+								"high": 164125162,
+								"unsigned": false
+							},
+							"key": "704912205188288575:33f11f7a1ec7d93b826de33bb54de37b",
+							"discounted_price": "19.99",
+							"discounts": [],
+							"gift_card": false,
+							"grams": 200,
+							"line_price": "59.97",
+							"original_line_price": "59.97",
+							"original_price": "19.99",
+							"price": "19.99",
+							"product_id": {
+								"low": -1530344832,
+								"high": 183478025,
+								"unsigned": false
+							},
+							"sku": "example-shirt-s",
+							"taxable": true,
+							"title": "Example T-Shirt",
+							"total_discount": "0.00",
+							"vendor": "Acme",
+							"discounted_price_set": {
+								"shop_money": {
+									"amount": "19.99",
+									"currency_code": "USD"
+								},
+								"presentment_money": {
+									"amount": "19.99",
+									"currency_code": "USD"
+								}
+							},
+							"line_price_set": {
+								"shop_money": {
+									"amount": "59.97",
+									"currency_code": "USD"
+								},
+								"presentment_money": {
+									"amount": "59.97",
+									"currency_code": "USD"
+								}
+							},
+							"original_line_price_set": {
+								"shop_money": {
+									"amount": "59.97",
+									"currency_code": "USD"
+								},
+								"presentment_money": {
+									"amount": "59.97",
+									"currency_code": "USD"
+								}
+							},
+							"price_set": {
+								"shop_money": {
+									"amount": "19.99",
+									"currency_code": "USD"
+								},
+								"presentment_money": {
+									"amount": "19.99",
+									"currency_code": "USD"
+								}
+							},
+							"total_discount_set": {
+								"shop_money": {
+									"amount": "0.0",
+									"currency_code": "USD"
+								},
+								"presentment_money": {
+									"amount": "0.0",
+									"currency_code": "USD"
+								}
+							}
+						}
+					],
+					"note": null,
+					"updated_at": "2022-01-01T00:00:00.000Z",
+					"created_at": "2022-01-01T00:00:00.000Z"
+				},
+				"category": null
+			},
+			{
+				"topic": "shopify_carts_update",
+				"title": "Cart updated",
+				"description": "Workflow starts when a cart is updated",
+				"sample_payload": {
+					"id": "eeafa272cebfd4b22385bc4b645e762c",
+					"token": "eeafa272cebfd4b22385bc4b645e762c",
+					"line_items": [
+						{
+							"id": {
+								"low": 1947586560,
+								"high": 164125162,
+								"unsigned": false
+							},
+							"properties": {},
+							"quantity": 3,
+							"variant_id": {
+								"low": 1947586560,
+								"high": 164125162,
+								"unsigned": false
+							},
+							"key": "704912205188288575:33f11f7a1ec7d93b826de33bb54de37b",
+							"discounted_price": "19.99",
+							"discounts": [],
+							"gift_card": false,
+							"grams": 200,
+							"line_price": "59.97",
+							"original_line_price": "59.97",
+							"original_price": "19.99",
+							"price": "19.99",
+							"product_id": {
+								"low": -1530344832,
+								"high": 183478025,
+								"unsigned": false
+							},
+							"sku": "example-shirt-s",
+							"taxable": true,
+							"title": "Example T-Shirt - Small",
+							"total_discount": "0.00",
+							"vendor": "Acme",
+							"discounted_price_set": {
+								"shop_money": {
+									"amount": "19.99",
+									"currency_code": "USD"
+								},
+								"presentment_money": {
+									"amount": "19.99",
+									"currency_code": "USD"
+								}
+							},
+							"line_price_set": {
+								"shop_money": {
+									"amount": "59.97",
+									"currency_code": "USD"
+								},
+								"presentment_money": {
+									"amount": "59.97",
+									"currency_code": "USD"
+								}
+							},
+							"original_line_price_set": {
+								"shop_money": {
+									"amount": "59.97",
+									"currency_code": "USD"
+								},
+								"presentment_money": {
+									"amount": "59.97",
+									"currency_code": "USD"
+								}
+							},
+							"price_set": {
+								"shop_money": {
+									"amount": "19.99",
+									"currency_code": "USD"
+								},
+								"presentment_money": {
+									"amount": "19.99",
+									"currency_code": "USD"
+								}
+							},
+							"total_discount_set": {
+								"shop_money": {
+									"amount": "0.0",
+									"currency_code": "USD"
+								},
+								"presentment_money": {
+									"amount": "0.0",
+									"currency_code": "USD"
+								}
+							}
+						}
+					],
+					"note": null,
+					"updated_at": "2022-01-01T00:00:00.000Z",
+					"created_at": "2022-01-01T00:00:00.000Z"
+				},
+				"category": null
+			},
+			{
+				"topic": "shopify_customers_create",
+				"title": "Customer Created",
+				"description": "Workflow starts when a new customer is created",
+				"sample_payload": {
+					"id": {
+						"low": -604576256,
+						"high": 164472848,
+						"unsigned": false
+					},
+					"email": "bob@biller.com",
+					"created_at": "2021-12-31T19:00:00-05:00",
+					"updated_at": "2021-12-31T19:00:00-05:00",
+					"first_name": "Bob",
+					"last_name": "Biller",
+					"orders_count": 0,
+					"state": "disabled",
+					"total_spent": "0.00",
+					"last_order_id": null,
+					"note": "This customer loves ice cream",
+					"verified_email": true,
+					"multipass_identifier": null,
+					"tax_exempt": false,
+					"tags": "",
+					"last_order_name": null,
+					"currency": "USD",
+					"phone": null,
+					"addresses": [],
+					"tax_exemptions": [],
+					"email_marketing_consent": null,
+					"sms_marketing_consent": null,
+					"admin_graphql_api_id": "gid://shopify/Customer/706405506930370084"
+				},
+				"category": null
+			},
+			{
+				"topic": "shopify_customers_delete",
+				"title": "Customer Deleted",
+				"description": "Workflow starts when a customer is deleted",
+				"sample_payload": {
+					"id": {
+						"low": -604576256,
+						"high": 164472848,
+						"unsigned": false
+					},
+					"phone": null,
+					"addresses": [],
+					"tax_exemptions": [],
+					"email_marketing_consent": null,
+					"sms_marketing_consent": null,
+					"admin_graphql_api_id": "gid://shopify/Customer/706405506930370084"
+				},
+				"category": null
+			},
+			{
+				"topic": "shopify_customers_update",
+				"title": "Customer Updated",
+				"description": "Workflow starts when a customer is updated",
+				"sample_payload": {
+					"id": {
+						"low": -604576256,
+						"high": 164472848,
+						"unsigned": false
+					},
+					"email": "bob@biller.com",
+					"created_at": "2021-12-31T19:00:00-05:00",
+					"updated_at": "2021-12-31T19:00:00-05:00",
+					"first_name": "Bob",
+					"last_name": "Biller",
+					"orders_count": 0,
+					"state": "disabled",
+					"total_spent": "0.00",
+					"last_order_id": null,
+					"note": "This customer loves ice cream",
+					"verified_email": true,
+					"multipass_identifier": null,
+					"tax_exempt": false,
+					"tags": "",
+					"last_order_name": null,
+					"currency": "USD",
+					"phone": null,
+					"addresses": [],
+					"tax_exemptions": [],
+					"email_marketing_consent": null,
+					"sms_marketing_consent": null,
+					"admin_graphql_api_id": "gid://shopify/Customer/706405506930370084"
+				},
+				"category": null
+			},
+			{
+				"topic": "shopify_discounts_create",
+				"title": "Discount Created",
+				"description": "Workflow starts when a new discount is created",
+				"sample_payload": {
+					"admin_graphql_api_id": "gid://shopify/DiscountAutomaticNode/1",
+					"title": "Automatic free shipping",
+					"status": "ACTIVE",
+					"created_at": "2016-08-29T08:00:00-04:00",
+					"updated_at": "2016-08-29T08:00:00-04:00"
+				},
+				"category": null
+			},
+			{
+				"topic": "shopify_discounts_delete",
+				"title": "Discount Deleted",
+				"description": "Workflow starts when a discount is deleted",
+				"sample_payload": {
+					"admin_graphql_api_id": "gid://shopify/DiscountAutomaticNode/1",
+					"deleted_at": "2018-08-29T08:00:00-04:00"
+				},
+				"category": null
+			},
+			{
+				"topic": "shopify_discounts_update",
+				"title": "Discount Updated",
+				"description": "Workflow starts when a discount is updated",
+				"sample_payload": {
+					"admin_graphql_api_id": "gid://shopify/DiscountAutomaticNode/1",
+					"title": "Automatic free shipping updated",
+					"status": "ACTIVE",
+					"created_at": "2016-08-29T08:00:00-04:00",
+					"updated_at": "2016-08-29T08:00:00-04:00"
+				},
+				"category": null
+			},
+			{
+				"topic": "shopify_orders_cancelled",
+				"title": "Order Cancelled",
+				"description": "Workflow starts when an order is cancelled",
+				"sample_payload": {
+					"id": 6091640013121,
+					"admin_graphql_api_id": "gid://shopify/Order/6091640013121",
+					"app_id": 1354745,
+					"browser_ip": "103.179.196.177",
+					"buyer_accepts_marketing": false,
+					"cancel_reason": "customer",
+					"cancelled_at": "2024-10-15T04:49:45-04:00",
+					"cart_token": null,
+					"checkout_id": 37874467275073,
+					"checkout_token": "a0f26c8509115958f628f0a2b8276acf",
+					"client_details": {
+						"accept_language": null,
+						"browser_height": null,
+						"browser_ip": "103.179.196.177",
+						"browser_width": null,
+						"session_hash": null,
+						"user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36"
+					},
+					"closed_at": "2024-10-15T04:49:45-04:00",
+					"company": null,
+					"confirmation_number": "Q80KQIPKH",
+					"confirmed": true,
+					"contact_email": "gokul@reviewbit.app",
+					"created_at": "2024-10-15T04:49:00-04:00",
+					"currency": "INR",
+					"current_shipping_price_set": {
+						"shop_money": {
+							"amount": "0.00",
+							"currency_code": "INR"
+						},
+						"presentment_money": {
+							"amount": "0.00",
+							"currency_code": "INR"
+						}
+					},
+					"current_subtotal_price": "0.00",
+					"current_subtotal_price_set": {
+						"shop_money": {
+							"amount": "0.00",
+							"currency_code": "INR"
+						},
+						"presentment_money": {
+							"amount": "0.00",
+							"currency_code": "INR"
+						}
+					},
+					"current_total_additional_fees_set": null,
+					"current_total_discounts": "0.00",
+					"current_total_discounts_set": {
+						"shop_money": {
+							"amount": "0.00",
+							"currency_code": "INR"
+						},
+						"presentment_money": {
+							"amount": "0.00",
+							"currency_code": "INR"
+						}
+					},
+					"current_total_duties_set": null,
+					"current_total_price": "0.00",
+					"current_total_price_set": {
+						"shop_money": {
+							"amount": "0.00",
+							"currency_code": "INR"
+						},
+						"presentment_money": {
+							"amount": "0.00",
+							"currency_code": "INR"
+						}
+					},
+					"current_total_tax": "0.00",
+					"current_total_tax_set": {
+						"shop_money": {
+							"amount": "0.00",
+							"currency_code": "INR"
+						},
+						"presentment_money": {
+							"amount": "0.00",
+							"currency_code": "INR"
+						}
+					},
+					"customer_locale": "en",
+					"device_id": null,
+					"discount_codes": [],
+					"duties_included": false,
+					"email": "gokul@reviewbit.app",
+					"estimated_taxes": false,
+					"financial_status": "refunded",
+					"fulfillment_status": null,
+					"landing_site": null,
+					"landing_site_ref": null,
+					"location_id": null,
+					"merchant_business_entity_id": "MTg5OTI0OTYwNTc3",
+					"merchant_of_record_app_id": null,
+					"name": "#1004",
+					"note": null,
+					"note_attributes": [],
+					"number": 4,
+					"order_number": 1004,
+					"order_status_url": "https://flowflex-dev.myshopify.com/89924960577/orders/9b96cda5d1df1161f38f4735b0e0bb5c/authenticate?key=afb97e0ffa11286a7b5309a76c984953",
+					"original_total_additional_fees_set": null,
+					"original_total_duties_set": null,
+					"payment_gateway_names": ["manual"],
+					"phone": "+918848870758",
+					"po_number": null,
+					"presentment_currency": "INR",
+					"processed_at": "2024-10-15T04:48:59-04:00",
+					"reference": "9c19ba3c15fc4fff03e8764ecb38b046",
+					"referring_site": null,
+					"source_identifier": "9c19ba3c15fc4fff03e8764ecb38b046",
+					"source_name": "shopify_draft_order",
+					"source_url": null,
+					"subtotal_price": "749.95",
+					"subtotal_price_set": {
+						"shop_money": {
+							"amount": "749.95",
+							"currency_code": "INR"
+						},
+						"presentment_money": {
+							"amount": "749.95",
+							"currency_code": "INR"
+						}
+					},
+					"tags": "",
+					"tax_exempt": false,
+					"tax_lines": [
+						{
+							"price": "134.99",
+							"rate": 0.18,
+							"title": "IGST",
+							"price_set": {
+								"shop_money": {
+									"amount": "134.99",
+									"currency_code": "INR"
+								},
+								"presentment_money": {
+									"amount": "134.99",
+									"currency_code": "INR"
+								}
+							},
+							"channel_liable": false
+						}
+					],
+					"taxes_included": false,
+					"test": false,
+					"token": "9b96cda5d1df1161f38f4735b0e0bb5c",
+					"total_cash_rounding_payment_adjustment_set": {
+						"shop_money": {
+							"amount": "0.00",
+							"currency_code": "INR"
+						},
+						"presentment_money": {
+							"amount": "0.00",
+							"currency_code": "INR"
+						}
+					},
+					"total_cash_rounding_refund_adjustment_set": {
+						"shop_money": {
+							"amount": "0.00",
+							"currency_code": "INR"
+						},
+						"presentment_money": {
+							"amount": "0.00",
+							"currency_code": "INR"
+						}
+					},
+					"total_discounts": "0.00",
+					"total_discounts_set": {
+						"shop_money": {
+							"amount": "0.00",
+							"currency_code": "INR"
+						},
+						"presentment_money": {
+							"amount": "0.00",
+							"currency_code": "INR"
+						}
+					},
+					"total_line_items_price": "749.95",
+					"total_line_items_price_set": {
+						"shop_money": {
+							"amount": "749.95",
+							"currency_code": "INR"
+						},
+						"presentment_money": {
+							"amount": "749.95",
+							"currency_code": "INR"
+						}
+					},
+					"total_outstanding": "0.00",
+					"total_price": "884.94",
+					"total_price_set": {
+						"shop_money": {
+							"amount": "884.94",
+							"currency_code": "INR"
+						},
+						"presentment_money": {
+							"amount": "884.94",
+							"currency_code": "INR"
+						}
+					},
+					"total_shipping_price_set": {
+						"shop_money": {
+							"amount": "0.00",
+							"currency_code": "INR"
+						},
+						"presentment_money": {
+							"amount": "0.00",
+							"currency_code": "INR"
+						}
+					},
+					"total_tax": "134.99",
+					"total_tax_set": {
+						"shop_money": {
+							"amount": "134.99",
+							"currency_code": "INR"
+						},
+						"presentment_money": {
+							"amount": "134.99",
+							"currency_code": "INR"
+						}
+					},
+					"total_tip_received": "0.00",
+					"total_weight": 0,
+					"updated_at": "2024-10-15T04:49:45-04:00",
+					"user_id": 114014093633,
+					"billing_address": {
+						"first_name": "Gokul",
+						"address1": "UL CyberPark Ummalathoor",
+						"phone": "+918848870758",
+						"city": "Kozhikode",
+						"zip": "673016",
+						"province": "Kerala",
+						"country": "India",
+						"last_name": "Raj",
+						"address2": null,
+						"company": "Reviewbit",
+						"latitude": 11.255002,
+						"longitude": 75.828204,
+						"name": "Gokul Raj",
+						"country_code": "IN",
+						"province_code": "KL"
+					},
+					"customer": {
+						"id": 8373969224001,
+						"email": "gokul@reviewbit.app",
+						"created_at": "2024-10-09T04:55:50-04:00",
+						"updated_at": "2024-10-15T04:49:01-04:00",
+						"first_name": "Gokul",
+						"last_name": "Raj",
+						"state": "disabled",
+						"note": "",
+						"verified_email": true,
+						"multipass_identifier": null,
+						"tax_exempt": false,
+						"phone": "+918848870758",
+						"email_marketing_consent": {
+							"state": "not_subscribed",
+							"opt_in_level": "single_opt_in",
+							"consent_updated_at": null
+						},
+						"sms_marketing_consent": {
+							"state": "not_subscribed",
+							"opt_in_level": "single_opt_in",
+							"consent_updated_at": null,
+							"consent_collected_from": "SHOPIFY"
+						},
+						"tags": "1, 2, newly addedone",
+						"currency": "INR",
+						"tax_exemptions": [],
+						"admin_graphql_api_id": "gid://shopify/Customer/8373969224001",
+						"default_address": {
+							"id": 10380879429953,
+							"customer_id": 8373969224001,
+							"first_name": "Gokul",
+							"last_name": "Raj",
+							"company": "Reviewbit",
+							"address1": "UL CyberPark Ummalathoor",
+							"address2": "",
+							"city": "Kozhikode",
+							"province": "Kerala",
+							"country": "India",
+							"zip": "673016",
+							"phone": "+918848870758",
+							"name": "Gokul Raj",
+							"province_code": "KL",
+							"country_code": "IN",
+							"country_name": "India",
+							"default": true
+						}
+					},
+					"discount_applications": [],
+					"fulfillments": [],
+					"line_items": [
+						{
+							"id": 15354549272897,
+							"admin_graphql_api_id": "gid://shopify/LineItem/15354549272897",
+							"attributed_staffs": [],
+							"current_quantity": 0,
+							"fulfillable_quantity": 0,
+							"fulfillment_service": "manual",
+							"fulfillment_status": null,
+							"gift_card": false,
+							"grams": 0,
+							"name": "The Collection Snowboard: Liquid",
+							"price": "749.95",
+							"price_set": {
+								"shop_money": {
+									"amount": "749.95",
+									"currency_code": "INR"
+								},
+								"presentment_money": {
+									"amount": "749.95",
+									"currency_code": "INR"
+								}
+							},
+							"product_exists": true,
+							"product_id": 9745331847489,
+							"properties": [],
+							"quantity": 1,
+							"requires_shipping": true,
+							"sku": null,
+							"taxable": true,
+							"title": "The Collection Snowboard: Liquid",
+							"total_discount": "0.00",
+							"total_discount_set": {
+								"shop_money": {
+									"amount": "0.00",
+									"currency_code": "INR"
+								},
+								"presentment_money": {
+									"amount": "0.00",
+									"currency_code": "INR"
+								}
+							},
+							"variant_id": 49472516194625,
+							"variant_inventory_management": "shopify",
+							"variant_title": null,
+							"vendor": "Hydrogen Vendor",
+							"tax_lines": [
+								{
+									"channel_liable": false,
+									"price": "134.99",
+									"price_set": {
+										"shop_money": {
+											"amount": "134.99",
+											"currency_code": "INR"
+										},
+										"presentment_money": {
+											"amount": "134.99",
+											"currency_code": "INR"
+										}
+									},
+									"rate": 0.18,
+									"title": "IGST"
+								}
+							],
+							"duties": [],
+							"discount_allocations": []
+						}
+					],
+					"payment_terms": null,
+					"refunds": [
+						{
+							"id": 981107310913,
+							"admin_graphql_api_id": "gid://shopify/Refund/981107310913",
+							"created_at": "2024-10-15T04:49:44-04:00",
+							"note": "Order canceled",
+							"order_id": 6091640013121,
+							"processed_at": "2024-10-15T04:49:44-04:00",
+							"restock": true,
+							"total_duties_set": {
+								"shop_money": {
+									"amount": "0.00",
+									"currency_code": "INR"
+								},
+								"presentment_money": {
+									"amount": "0.00",
+									"currency_code": "INR"
+								}
+							},
+							"user_id": 114014093633,
+							"order_adjustments": [],
+							"transactions": [
+								{
+									"id": 7446299738433,
+									"admin_graphql_api_id": "gid://shopify/OrderTransaction/7446299738433",
+									"amount": "884.94",
+									"authorization": null,
+									"created_at": "2024-10-15T04:49:44-04:00",
+									"currency": "INR",
+									"device_id": null,
+									"error_code": null,
+									"gateway": "manual",
+									"kind": "refund",
+									"location_id": null,
+									"message": "Refunded 884.94 INR from manual gateway",
+									"order_id": 6091640013121,
+									"parent_id": 7446299246913,
+									"payment_id": "#1004.2",
+									"processed_at": "2024-10-15T04:49:44-04:00",
+									"receipt": {},
+									"source_name": "1830279",
+									"status": "success",
+									"test": false,
+									"user_id": 114014093633
+								}
+							],
+							"refund_line_items": [
+								{
+									"id": 599240147265,
+									"line_item_id": 15354549272897,
+									"location_id": 101932499265,
+									"quantity": 1,
+									"restock_type": "cancel",
+									"subtotal": 749.95,
+									"subtotal_set": {
+										"shop_money": {
+											"amount": "749.95",
+											"currency_code": "INR"
+										},
+										"presentment_money": {
+											"amount": "749.95",
+											"currency_code": "INR"
+										}
+									},
+									"total_tax": 134.99,
+									"total_tax_set": {
+										"shop_money": {
+											"amount": "134.99",
+											"currency_code": "INR"
+										},
+										"presentment_money": {
+											"amount": "134.99",
+											"currency_code": "INR"
+										}
+									},
+									"line_item": {
+										"id": 15354549272897,
+										"admin_graphql_api_id": "gid://shopify/LineItem/15354549272897",
+										"attributed_staffs": [],
+										"current_quantity": 0,
+										"fulfillable_quantity": 0,
+										"fulfillment_service": "manual",
+										"fulfillment_status": null,
+										"gift_card": false,
+										"grams": 0,
+										"name": "The Collection Snowboard: Liquid",
+										"price": "749.95",
+										"price_set": {
+											"shop_money": {
+												"amount": "749.95",
+												"currency_code": "INR"
+											},
+											"presentment_money": {
+												"amount": "749.95",
+												"currency_code": "INR"
+											}
+										},
+										"product_exists": true,
+										"product_id": 9745331847489,
+										"properties": [],
+										"quantity": 1,
+										"requires_shipping": true,
+										"sku": null,
+										"taxable": true,
+										"title": "The Collection Snowboard: Liquid",
+										"total_discount": "0.00",
+										"total_discount_set": {
+											"shop_money": {
+												"amount": "0.00",
+												"currency_code": "INR"
+											},
+											"presentment_money": {
+												"amount": "0.00",
+												"currency_code": "INR"
+											}
+										},
+										"variant_id": 49472516194625,
+										"variant_inventory_management": "shopify",
+										"variant_title": null,
+										"vendor": "Hydrogen Vendor",
+										"tax_lines": [
+											{
+												"channel_liable": false,
+												"price": "134.99",
+												"price_set": {
+													"shop_money": {
+														"amount": "134.99",
+														"currency_code": "INR"
+													},
+													"presentment_money": {
+														"amount": "134.99",
+														"currency_code": "INR"
+													}
+												},
+												"rate": 0.18,
+												"title": "IGST"
+											}
+										],
+										"duties": [],
+										"discount_allocations": []
+									}
+								}
+							],
+							"duties": []
+						}
+					],
+					"shipping_address": {
+						"first_name": "Gokul",
+						"address1": "UL CyberPark Ummalathoor",
+						"phone": "+918848870758",
+						"city": "Kozhikode",
+						"zip": "673016",
+						"province": "Kerala",
+						"country": "India",
+						"last_name": "Raj",
+						"address2": null,
+						"company": "Reviewbit",
+						"latitude": 11.255002,
+						"longitude": 75.828204,
+						"name": "Gokul Raj",
+						"country_code": "IN",
+						"province_code": "KL"
+					},
+					"shipping_lines": [],
+					"returns": []
+				},
+				"category": null
+			},
+			{
+				"topic": "shopify_orders_create",
+				"title": "Order Created",
+				"description": "Workflow starts when a new order is created",
+				"sample_payload": {
+					"id": 6083565551937,
+					"admin_graphql_api_id": "gid://shopify/Order/6083565551937",
+					"app_id": 1354745,
+					"browser_ip": "103.176.185.138",
+					"buyer_accepts_marketing": false,
+					"cancel_reason": null,
+					"cancelled_at": null,
+					"cart_token": null,
+					"checkout_id": 37858624962881,
+					"checkout_token": "1651dd48d9a4856d58f6fcf35625a38b",
+					"client_details": {
+						"accept_language": null,
+						"browser_height": null,
+						"browser_ip": "103.176.185.138",
+						"browser_width": null,
+						"session_hash": null,
+						"user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36"
+					},
+					"closed_at": null,
+					"company": null,
+					"confirmation_number": "IF8H5WWV6",
+					"confirmed": true,
+					"contact_email": "gokul@reviewbit.app",
+					"created_at": "2024-10-09T04:56:52-04:00",
+					"currency": "INR",
+					"current_shipping_price_set": {
+						"shop_money": {
+							"amount": "0.00",
+							"currency_code": "INR"
+						},
+						"presentment_money": {
+							"amount": "0.00",
+							"currency_code": "INR"
+						}
+					},
+					"current_subtotal_price": "749.95",
+					"current_subtotal_price_set": {
+						"shop_money": {
+							"amount": "749.95",
+							"currency_code": "INR"
+						},
+						"presentment_money": {
+							"amount": "749.95",
+							"currency_code": "INR"
+						}
+					},
+					"current_total_additional_fees_set": null,
+					"current_total_discounts": "0.00",
+					"current_total_discounts_set": {
+						"shop_money": {
+							"amount": "0.00",
+							"currency_code": "INR"
+						},
+						"presentment_money": {
+							"amount": "0.00",
+							"currency_code": "INR"
+						}
+					},
+					"current_total_duties_set": null,
+					"current_total_price": "884.94",
+					"current_total_price_set": {
+						"shop_money": {
+							"amount": "884.94",
+							"currency_code": "INR"
+						},
+						"presentment_money": {
+							"amount": "884.94",
+							"currency_code": "INR"
+						}
+					},
+					"current_total_tax": "134.99",
+					"current_total_tax_set": {
+						"shop_money": {
+							"amount": "134.99",
+							"currency_code": "INR"
+						},
+						"presentment_money": {
+							"amount": "134.99",
+							"currency_code": "INR"
+						}
+					},
+					"customer_locale": "en",
+					"device_id": null,
+					"discount_codes": [],
+					"duties_included": false,
+					"email": "gokul@reviewbit.app",
+					"estimated_taxes": false,
+					"financial_status": "paid",
+					"fulfillment_status": null,
+					"landing_site": null,
+					"landing_site_ref": null,
+					"location_id": null,
+					"merchant_business_entity_id": "MTg5OTI0OTYwNTc3",
+					"merchant_of_record_app_id": null,
+					"name": "#1003",
+					"note": null,
+					"note_attributes": [],
+					"number": 3,
+					"order_number": 1003,
+					"order_status_url": "https://flowflex-dev.myshopify.com/89924960577/orders/9f1ffcd541c2c923dcc756c6096620c6/authenticate?key=97fa5f9d6a69d8eca75825be253bac04",
+					"original_total_additional_fees_set": null,
+					"original_total_duties_set": null,
+					"payment_gateway_names": ["manual"],
+					"phone": "+918848870758",
+					"po_number": null,
+					"presentment_currency": "INR",
+					"processed_at": "2024-10-09T04:56:52-04:00",
+					"reference": "6a5738de7d77b0d96d96c96fb6a21fc5",
+					"referring_site": null,
+					"source_identifier": "6a5738de7d77b0d96d96c96fb6a21fc5",
+					"source_name": "shopify_draft_order",
+					"source_url": null,
+					"subtotal_price": "749.95",
+					"subtotal_price_set": {
+						"shop_money": {
+							"amount": "749.95",
+							"currency_code": "INR"
+						},
+						"presentment_money": {
+							"amount": "749.95",
+							"currency_code": "INR"
+						}
+					},
+					"tags": "",
+					"tax_exempt": false,
+					"tax_lines": [
+						{
+							"price": "134.99",
+							"rate": 0.18,
+							"title": "IGST",
+							"price_set": {
+								"shop_money": {
+									"amount": "134.99",
+									"currency_code": "INR"
+								},
+								"presentment_money": {
+									"amount": "134.99",
+									"currency_code": "INR"
+								}
+							},
+							"channel_liable": false
+						}
+					],
+					"taxes_included": false,
+					"test": false,
+					"token": "9f1ffcd541c2c923dcc756c6096620c6",
+					"total_cash_rounding_payment_adjustment_set": {
+						"shop_money": {
+							"amount": "0.00",
+							"currency_code": "INR"
+						},
+						"presentment_money": {
+							"amount": "0.00",
+							"currency_code": "INR"
+						}
+					},
+					"total_cash_rounding_refund_adjustment_set": {
+						"shop_money": {
+							"amount": "0.00",
+							"currency_code": "INR"
+						},
+						"presentment_money": {
+							"amount": "0.00",
+							"currency_code": "INR"
+						}
+					},
+					"total_discounts": "0.00",
+					"total_discounts_set": {
+						"shop_money": {
+							"amount": "0.00",
+							"currency_code": "INR"
+						},
+						"presentment_money": {
+							"amount": "0.00",
+							"currency_code": "INR"
+						}
+					},
+					"total_line_items_price": "749.95",
+					"total_line_items_price_set": {
+						"shop_money": {
+							"amount": "749.95",
+							"currency_code": "INR"
+						},
+						"presentment_money": {
+							"amount": "749.95",
+							"currency_code": "INR"
+						}
+					},
+					"total_outstanding": "0.00",
+					"total_price": "884.94",
+					"total_price_set": {
+						"shop_money": {
+							"amount": "884.94",
+							"currency_code": "INR"
+						},
+						"presentment_money": {
+							"amount": "884.94",
+							"currency_code": "INR"
+						}
+					},
+					"total_shipping_price_set": {
+						"shop_money": {
+							"amount": "0.00",
+							"currency_code": "INR"
+						},
+						"presentment_money": {
+							"amount": "0.00",
+							"currency_code": "INR"
+						}
+					},
+					"total_tax": "134.99",
+					"total_tax_set": {
+						"shop_money": {
+							"amount": "134.99",
+							"currency_code": "INR"
+						},
+						"presentment_money": {
+							"amount": "134.99",
+							"currency_code": "INR"
+						}
+					},
+					"total_tip_received": "0.00",
+					"total_weight": 0,
+					"updated_at": "2024-10-09T04:56:53-04:00",
+					"user_id": 114014093633,
+					"billing_address": {
+						"first_name": "Gokul",
+						"address1": "UL CyberPark Ummalathoor",
+						"phone": "+918848870758",
+						"city": "Kozhikode",
+						"zip": "673016",
+						"province": "Kerala",
+						"country": "India",
+						"last_name": "Raj",
+						"address2": null,
+						"company": "Reviewbit",
+						"latitude": null,
+						"longitude": null,
+						"name": "Gokul Raj",
+						"country_code": "IN",
+						"province_code": "KL"
+					},
+					"customer": {
+						"id": 8373969224001,
+						"email": "gokul@reviewbit.app",
+						"created_at": "2024-10-09T04:55:50-04:00",
+						"updated_at": "2024-10-09T04:56:53-04:00",
+						"first_name": "Gokul",
+						"last_name": "Raj",
+						"state": "disabled",
+						"note": "",
+						"verified_email": true,
+						"multipass_identifier": null,
+						"tax_exempt": false,
+						"phone": "+918848870758",
+						"email_marketing_consent": {
+							"state": "not_subscribed",
+							"opt_in_level": "single_opt_in",
+							"consent_updated_at": null
+						},
+						"sms_marketing_consent": {
+							"state": "not_subscribed",
+							"opt_in_level": "single_opt_in",
+							"consent_updated_at": null,
+							"consent_collected_from": "SHOPIFY"
+						},
+						"tags": "",
+						"currency": "INR",
+						"tax_exemptions": [],
+						"admin_graphql_api_id": "gid://shopify/Customer/8373969224001",
+						"default_address": {
+							"id": 10380879429953,
+							"customer_id": 8373969224001,
+							"first_name": "Gokul",
+							"last_name": "Raj",
+							"company": "Reviewbit",
+							"address1": "UL CyberPark Ummalathoor",
+							"address2": "",
+							"city": "Kozhikode",
+							"province": "Kerala",
+							"country": "India",
+							"zip": "673016",
+							"phone": "+918848870758",
+							"name": "Gokul Raj",
+							"province_code": "KL",
+							"country_code": "IN",
+							"country_name": "India",
+							"default": true
+						}
+					},
+					"discount_applications": [],
+					"fulfillments": [],
+					"line_items": [
+						{
+							"id": 15340327895361,
+							"admin_graphql_api_id": "gid://shopify/LineItem/15340327895361",
+							"attributed_staffs": [],
+							"current_quantity": 1,
+							"fulfillable_quantity": 1,
+							"fulfillment_service": "manual",
+							"fulfillment_status": null,
+							"gift_card": false,
+							"grams": 0,
+							"name": "The Collection Snowboard: Liquid",
+							"price": "749.95",
+							"price_set": {
+								"shop_money": {
+									"amount": "749.95",
+									"currency_code": "INR"
+								},
+								"presentment_money": {
+									"amount": "749.95",
+									"currency_code": "INR"
+								}
+							},
+							"product_exists": true,
+							"product_id": 9745331847489,
+							"properties": [],
+							"quantity": 1,
+							"requires_shipping": true,
+							"sku": null,
+							"taxable": true,
+							"title": "The Collection Snowboard: Liquid",
+							"total_discount": "0.00",
+							"total_discount_set": {
+								"shop_money": {
+									"amount": "0.00",
+									"currency_code": "INR"
+								},
+								"presentment_money": {
+									"amount": "0.00",
+									"currency_code": "INR"
+								}
+							},
+							"variant_id": 49472516194625,
+							"variant_inventory_management": "shopify",
+							"variant_title": null,
+							"vendor": "Hydrogen Vendor",
+							"tax_lines": [
+								{
+									"channel_liable": false,
+									"price": "134.99",
+									"price_set": {
+										"shop_money": {
+											"amount": "134.99",
+											"currency_code": "INR"
+										},
+										"presentment_money": {
+											"amount": "134.99",
+											"currency_code": "INR"
+										}
+									},
+									"rate": 0.18,
+									"title": "IGST"
+								}
+							],
+							"duties": [],
+							"discount_allocations": []
+						}
+					],
+					"payment_terms": null,
+					"refunds": [],
+					"shipping_address": {
+						"first_name": "Gokul",
+						"address1": "UL CyberPark Ummalathoor",
+						"phone": "+918848870758",
+						"city": "Kozhikode",
+						"zip": "673016",
+						"province": "Kerala",
+						"country": "India",
+						"last_name": "Raj",
+						"address2": null,
+						"company": "Reviewbit",
+						"latitude": 11.255002,
+						"longitude": 75.828204,
+						"name": "Gokul Raj",
+						"country_code": "IN",
+						"province_code": "KL"
+					},
+					"shipping_lines": [],
+					"returns": []
+				},
+				"category": null
+			},
+			{
+				"topic": "shopify_orders_delete",
+				"title": "Order Deleted",
+				"description": "Workflow starts when an order is deleted",
+				"sample_payload": {
+					"id": {
+						"low": -784899584,
+						"high": 191149979,
+						"unsigned": false
+					}
+				},
+				"category": null
+			},
+			{
+				"topic": "shopify_orders_edited",
+				"title": "Order Edited",
+				"description": "Workflow starts when an order is edited",
+				"sample_payload": {
+					"order_edit": {
+						"id": {
+							"low": 1310518208,
+							"high": 18373208,
+							"unsigned": false
+						},
+						"app_id": null,
+						"created_at": "2021-12-31T19:00:00-05:00",
+						"committed_at": "2021-12-31T19:00:00-05:00",
+						"notify_customer": false,
+						"order_id": {
+							"low": -784899584,
+							"high": 191149979,
+							"unsigned": false
+						},
+						"staff_note": "",
+						"user_id": null,
+						"line_items": {
+							"additions": [
+								{
+									"id": {
+										"low": 2145341600,
+										"high": 18310715,
+										"unsigned": false
+									},
+									"delta": 1
+								}
+							],
+							"removals": [
+								{
+									"id": {
+										"low": -656952192,
+										"high": 201759466,
+										"unsigned": false
+									},
+									"delta": 1
+								}
+							]
+						},
+						"discounts": {
+							"line_item": {
+								"additions": [],
+								"removals": []
+							}
+						},
+						"shipping_lines": {
+							"additions": [],
+							"removals": []
+						}
+					}
+				},
+				"category": null
+			},
+			{
+				"topic": "shopify_orders_fulfilled",
+				"title": "Order Fulfilled",
+				"description": "Workflow starts when an order is fulfilled",
+				"sample_payload": {
+					"id": 6083565551937,
+					"admin_graphql_api_id": "gid://shopify/Order/6083565551937",
+					"app_id": 1354745,
+					"browser_ip": "103.176.185.138",
+					"buyer_accepts_marketing": false,
+					"cancel_reason": null,
+					"cancelled_at": null,
+					"cart_token": null,
+					"checkout_id": 37858624962881,
+					"checkout_token": "1651dd48d9a4856d58f6fcf35625a38b",
+					"client_details": {
+						"accept_language": null,
+						"browser_height": null,
+						"browser_ip": "103.176.185.138",
+						"browser_width": null,
+						"session_hash": null,
+						"user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36"
+					},
+					"closed_at": "2024-10-09T04:58:06-04:00",
+					"company": null,
+					"confirmation_number": "IF8H5WWV6",
+					"confirmed": true,
+					"contact_email": "gokul@reviewbit.app",
+					"created_at": "2024-10-09T04:56:52-04:00",
+					"currency": "INR",
+					"current_shipping_price_set": {
+						"shop_money": {
+							"amount": "0.00",
+							"currency_code": "INR"
+						},
+						"presentment_money": {
+							"amount": "0.00",
+							"currency_code": "INR"
+						}
+					},
+					"current_subtotal_price": "749.95",
+					"current_subtotal_price_set": {
+						"shop_money": {
+							"amount": "749.95",
+							"currency_code": "INR"
+						},
+						"presentment_money": {
+							"amount": "749.95",
+							"currency_code": "INR"
+						}
+					},
+					"current_total_additional_fees_set": null,
+					"current_total_discounts": "0.00",
+					"current_total_discounts_set": {
+						"shop_money": {
+							"amount": "0.00",
+							"currency_code": "INR"
+						},
+						"presentment_money": {
+							"amount": "0.00",
+							"currency_code": "INR"
+						}
+					},
+					"current_total_duties_set": null,
+					"current_total_price": "884.94",
+					"current_total_price_set": {
+						"shop_money": {
+							"amount": "884.94",
+							"currency_code": "INR"
+						},
+						"presentment_money": {
+							"amount": "884.94",
+							"currency_code": "INR"
+						}
+					},
+					"current_total_tax": "134.99",
+					"current_total_tax_set": {
+						"shop_money": {
+							"amount": "134.99",
+							"currency_code": "INR"
+						},
+						"presentment_money": {
+							"amount": "134.99",
+							"currency_code": "INR"
+						}
+					},
+					"customer_locale": "en",
+					"device_id": null,
+					"discount_codes": [],
+					"duties_included": false,
+					"email": "gokul@reviewbit.app",
+					"estimated_taxes": false,
+					"financial_status": "paid",
+					"fulfillment_status": "fulfilled",
+					"landing_site": null,
+					"landing_site_ref": null,
+					"location_id": null,
+					"merchant_business_entity_id": "MTg5OTI0OTYwNTc3",
+					"merchant_of_record_app_id": null,
+					"name": "#1003",
+					"note": null,
+					"note_attributes": [],
+					"number": 3,
+					"order_number": 1003,
+					"order_status_url": "https://flowflex-dev.myshopify.com/89924960577/orders/9f1ffcd541c2c923dcc756c6096620c6/authenticate?key=97fa5f9d6a69d8eca75825be253bac04",
+					"original_total_additional_fees_set": null,
+					"original_total_duties_set": null,
+					"payment_gateway_names": ["manual"],
+					"phone": "+918848870758",
+					"po_number": null,
+					"presentment_currency": "INR",
+					"processed_at": "2024-10-09T04:56:52-04:00",
+					"reference": "6a5738de7d77b0d96d96c96fb6a21fc5",
+					"referring_site": null,
+					"source_identifier": "6a5738de7d77b0d96d96c96fb6a21fc5",
+					"source_name": "shopify_draft_order",
+					"source_url": null,
+					"subtotal_price": "749.95",
+					"subtotal_price_set": {
+						"shop_money": {
+							"amount": "749.95",
+							"currency_code": "INR"
+						},
+						"presentment_money": {
+							"amount": "749.95",
+							"currency_code": "INR"
+						}
+					},
+					"tags": "",
+					"tax_exempt": false,
+					"tax_lines": [
+						{
+							"price": "134.99",
+							"rate": 0.18,
+							"title": "IGST",
+							"price_set": {
+								"shop_money": {
+									"amount": "134.99",
+									"currency_code": "INR"
+								},
+								"presentment_money": {
+									"amount": "134.99",
+									"currency_code": "INR"
+								}
+							},
+							"channel_liable": false
+						}
+					],
+					"taxes_included": false,
+					"test": false,
+					"token": "9f1ffcd541c2c923dcc756c6096620c6",
+					"total_cash_rounding_payment_adjustment_set": {
+						"shop_money": {
+							"amount": "0.00",
+							"currency_code": "INR"
+						},
+						"presentment_money": {
+							"amount": "0.00",
+							"currency_code": "INR"
+						}
+					},
+					"total_cash_rounding_refund_adjustment_set": {
+						"shop_money": {
+							"amount": "0.00",
+							"currency_code": "INR"
+						},
+						"presentment_money": {
+							"amount": "0.00",
+							"currency_code": "INR"
+						}
+					},
+					"total_discounts": "0.00",
+					"total_discounts_set": {
+						"shop_money": {
+							"amount": "0.00",
+							"currency_code": "INR"
+						},
+						"presentment_money": {
+							"amount": "0.00",
+							"currency_code": "INR"
+						}
+					},
+					"total_line_items_price": "749.95",
+					"total_line_items_price_set": {
+						"shop_money": {
+							"amount": "749.95",
+							"currency_code": "INR"
+						},
+						"presentment_money": {
+							"amount": "749.95",
+							"currency_code": "INR"
+						}
+					},
+					"total_outstanding": "0.00",
+					"total_price": "884.94",
+					"total_price_set": {
+						"shop_money": {
+							"amount": "884.94",
+							"currency_code": "INR"
+						},
+						"presentment_money": {
+							"amount": "884.94",
+							"currency_code": "INR"
+						}
+					},
+					"total_shipping_price_set": {
+						"shop_money": {
+							"amount": "0.00",
+							"currency_code": "INR"
+						},
+						"presentment_money": {
+							"amount": "0.00",
+							"currency_code": "INR"
+						}
+					},
+					"total_tax": "134.99",
+					"total_tax_set": {
+						"shop_money": {
+							"amount": "134.99",
+							"currency_code": "INR"
+						},
+						"presentment_money": {
+							"amount": "134.99",
+							"currency_code": "INR"
+						}
+					},
+					"total_tip_received": "0.00",
+					"total_weight": 0,
+					"updated_at": "2024-10-09T04:58:06-04:00",
+					"user_id": 114014093633,
+					"billing_address": {
+						"first_name": "Gokul",
+						"address1": "UL CyberPark Ummalathoor",
+						"phone": "+918848870758",
+						"city": "Kozhikode",
+						"zip": "673016",
+						"province": "Kerala",
+						"country": "India",
+						"last_name": "Raj",
+						"address2": null,
+						"company": "Reviewbit",
+						"latitude": null,
+						"longitude": null,
+						"name": "Gokul Raj",
+						"country_code": "IN",
+						"province_code": "KL"
+					},
+					"customer": {
+						"id": 8373969224001,
+						"email": "gokul@reviewbit.app",
+						"created_at": "2024-10-09T04:55:50-04:00",
+						"updated_at": "2024-10-09T04:56:53-04:00",
+						"first_name": "Gokul",
+						"last_name": "Raj",
+						"state": "disabled",
+						"note": "",
+						"verified_email": true,
+						"multipass_identifier": null,
+						"tax_exempt": false,
+						"phone": "+918848870758",
+						"email_marketing_consent": {
+							"state": "not_subscribed",
+							"opt_in_level": "single_opt_in",
+							"consent_updated_at": null
+						},
+						"sms_marketing_consent": {
+							"state": "not_subscribed",
+							"opt_in_level": "single_opt_in",
+							"consent_updated_at": null,
+							"consent_collected_from": "SHOPIFY"
+						},
+						"tags": "",
+						"currency": "INR",
+						"tax_exemptions": [],
+						"admin_graphql_api_id": "gid://shopify/Customer/8373969224001",
+						"default_address": {
+							"id": 10380879429953,
+							"customer_id": 8373969224001,
+							"first_name": "Gokul",
+							"last_name": "Raj",
+							"company": "Reviewbit",
+							"address1": "UL CyberPark Ummalathoor",
+							"address2": "",
+							"city": "Kozhikode",
+							"province": "Kerala",
+							"country": "India",
+							"zip": "673016",
+							"phone": "+918848870758",
+							"name": "Gokul Raj",
+							"province_code": "KL",
+							"country_code": "IN",
+							"country_name": "India",
+							"default": true
+						}
+					},
+					"discount_applications": [],
+					"fulfillments": [
+						{
+							"id": 5394565726529,
+							"admin_graphql_api_id": "gid://shopify/Fulfillment/5394565726529",
+							"created_at": "2024-10-09T04:58:06-04:00",
+							"location_id": 101932499265,
+							"name": "#1003.1",
+							"order_id": 6083565551937,
+							"origin_address": {},
+							"receipt": {},
+							"service": "manual",
+							"shipment_status": null,
+							"status": "success",
+							"tracking_company": "99 Minutos",
+							"tracking_number": "NEW23232",
+							"tracking_numbers": ["NEW23232"],
+							"tracking_url": "https://www.99minutos.com/tracking/NEW23232",
+							"tracking_urls": [
+								"https://www.99minutos.com/tracking/NEW23232"
+							],
+							"updated_at": "2024-10-09T04:58:06-04:00",
+							"line_items": [
+								{
+									"id": 15340327895361,
+									"admin_graphql_api_id": "gid://shopify/LineItem/15340327895361",
+									"attributed_staffs": [],
+									"current_quantity": 1,
+									"fulfillable_quantity": 0,
+									"fulfillment_service": "manual",
+									"fulfillment_status": "fulfilled",
+									"gift_card": false,
+									"grams": 0,
+									"name": "The Collection Snowboard: Liquid",
+									"price": "749.95",
+									"price_set": {
+										"shop_money": {
+											"amount": "749.95",
+											"currency_code": "INR"
+										},
+										"presentment_money": {
+											"amount": "749.95",
+											"currency_code": "INR"
+										}
+									},
+									"product_exists": true,
+									"product_id": 9745331847489,
+									"properties": [],
+									"quantity": 1,
+									"requires_shipping": true,
+									"sku": null,
+									"taxable": true,
+									"title": "The Collection Snowboard: Liquid",
+									"total_discount": "0.00",
+									"total_discount_set": {
+										"shop_money": {
+											"amount": "0.00",
+											"currency_code": "INR"
+										},
+										"presentment_money": {
+											"amount": "0.00",
+											"currency_code": "INR"
+										}
+									},
+									"variant_id": 49472516194625,
+									"variant_inventory_management": "shopify",
+									"variant_title": null,
+									"vendor": "Hydrogen Vendor",
+									"tax_lines": [
+										{
+											"channel_liable": false,
+											"price": "134.99",
+											"price_set": {
+												"shop_money": {
+													"amount": "134.99",
+													"currency_code": "INR"
+												},
+												"presentment_money": {
+													"amount": "134.99",
+													"currency_code": "INR"
+												}
+											},
+											"rate": 0.18,
+											"title": "IGST"
+										}
+									],
+									"duties": [],
+									"discount_allocations": []
+								}
+							]
+						}
+					],
+					"line_items": [
+						{
+							"id": 15340327895361,
+							"admin_graphql_api_id": "gid://shopify/LineItem/15340327895361",
+							"attributed_staffs": [],
+							"current_quantity": 1,
+							"fulfillable_quantity": 0,
+							"fulfillment_service": "manual",
+							"fulfillment_status": "fulfilled",
+							"gift_card": false,
+							"grams": 0,
+							"name": "The Collection Snowboard: Liquid",
+							"price": "749.95",
+							"price_set": {
+								"shop_money": {
+									"amount": "749.95",
+									"currency_code": "INR"
+								},
+								"presentment_money": {
+									"amount": "749.95",
+									"currency_code": "INR"
+								}
+							},
+							"product_exists": true,
+							"product_id": 9745331847489,
+							"properties": [],
+							"quantity": 1,
+							"requires_shipping": true,
+							"sku": null,
+							"taxable": true,
+							"title": "The Collection Snowboard: Liquid",
+							"total_discount": "0.00",
+							"total_discount_set": {
+								"shop_money": {
+									"amount": "0.00",
+									"currency_code": "INR"
+								},
+								"presentment_money": {
+									"amount": "0.00",
+									"currency_code": "INR"
+								}
+							},
+							"variant_id": 49472516194625,
+							"variant_inventory_management": "shopify",
+							"variant_title": null,
+							"vendor": "Hydrogen Vendor",
+							"tax_lines": [
+								{
+									"channel_liable": false,
+									"price": "134.99",
+									"price_set": {
+										"shop_money": {
+											"amount": "134.99",
+											"currency_code": "INR"
+										},
+										"presentment_money": {
+											"amount": "134.99",
+											"currency_code": "INR"
+										}
+									},
+									"rate": 0.18,
+									"title": "IGST"
+								}
+							],
+							"duties": [],
+							"discount_allocations": []
+						}
+					],
+					"payment_terms": null,
+					"refunds": [],
+					"shipping_address": {
+						"first_name": "Gokul",
+						"address1": "UL CyberPark Ummalathoor",
+						"phone": "+918848870758",
+						"city": "Kozhikode",
+						"zip": "673016",
+						"province": "Kerala",
+						"country": "India",
+						"last_name": "Raj",
+						"address2": null,
+						"company": "Reviewbit",
+						"latitude": 11.255002,
+						"longitude": 75.828204,
+						"name": "Gokul Raj",
+						"country_code": "IN",
+						"province_code": "KL"
+					},
+					"shipping_lines": [],
+					"returns": []
+				},
+				"category": null
+			},
+			{
+				"topic": "shopify_orders_paid",
+				"title": "Order Paid",
+				"description": "Workflow starts when an order is paid",
+				"sample_payload": {
+					"id": {
+						"low": -784899584,
+						"high": 191149979,
+						"unsigned": false
+					},
+					"admin_graphql_api_id": "gid://shopify/Order/820982911946154508",
+					"app_id": null,
+					"browser_ip": null,
+					"buyer_accepts_marketing": true,
+					"cancel_reason": "customer",
+					"cancelled_at": "2021-12-31T19:00:00-05:00",
+					"cart_token": null,
+					"checkout_id": null,
+					"checkout_token": null,
+					"client_details": null,
+					"closed_at": null,
+					"confirmation_number": null,
+					"confirmed": false,
+					"contact_email": "jon@example.com",
+					"created_at": "2021-12-31T19:00:00-05:00",
+					"currency": "USD",
+					"current_subtotal_price": "398.00",
+					"current_subtotal_price_set": {
+						"shop_money": {
+							"amount": "398.00",
+							"currency_code": "USD"
+						},
+						"presentment_money": {
+							"amount": "398.00",
+							"currency_code": "USD"
+						}
+					},
+					"current_total_additional_fees_set": null,
+					"current_total_discounts": "0.00",
+					"current_total_discounts_set": {
+						"shop_money": {
+							"amount": "0.00",
+							"currency_code": "USD"
+						},
+						"presentment_money": {
+							"amount": "0.00",
+							"currency_code": "USD"
+						}
+					},
+					"current_total_duties_set": null,
+					"current_total_price": "398.00",
+					"current_total_price_set": {
+						"shop_money": {
+							"amount": "398.00",
+							"currency_code": "USD"
+						},
+						"presentment_money": {
+							"amount": "398.00",
+							"currency_code": "USD"
+						}
+					},
+					"current_total_tax": "0.00",
+					"current_total_tax_set": {
+						"shop_money": {
+							"amount": "0.00",
+							"currency_code": "USD"
+						},
+						"presentment_money": {
+							"amount": "0.00",
+							"currency_code": "USD"
+						}
+					},
+					"customer_locale": "en",
+					"device_id": null,
+					"discount_codes": [],
+					"email": "jon@example.com",
+					"estimated_taxes": false,
+					"financial_status": "voided",
+					"fulfillment_status": "pending",
+					"landing_site": null,
+					"landing_site_ref": null,
+					"location_id": null,
+					"merchant_of_record_app_id": null,
+					"name": "#9999",
+					"note": null,
+					"note_attributes": [],
+					"number": 234,
+					"order_number": 1234,
+					"order_status_url": "https://jsmith.myshopify.com/548380009/orders/123456abcd/authenticate?key=abcdefg",
+					"original_total_additional_fees_set": null,
+					"original_total_duties_set": null,
+					"payment_gateway_names": ["visa", "bogus"],
+					"phone": null,
+					"po_number": null,
+					"presentment_currency": "USD",
+					"processed_at": "2021-12-31T19:00:00-05:00",
+					"reference": null,
+					"referring_site": null,
+					"source_identifier": null,
+					"source_name": "web",
+					"source_url": null,
+					"subtotal_price": "388.00",
+					"subtotal_price_set": {
+						"shop_money": {
+							"amount": "388.00",
+							"currency_code": "USD"
+						},
+						"presentment_money": {
+							"amount": "388.00",
+							"currency_code": "USD"
+						}
+					},
+					"tags": "tag1, tag2",
+					"tax_exempt": false,
+					"tax_lines": [],
+					"taxes_included": false,
+					"test": true,
+					"token": "123456abcd",
+					"total_discounts": "20.00",
+					"total_discounts_set": {
+						"shop_money": {
+							"amount": "20.00",
+							"currency_code": "USD"
+						},
+						"presentment_money": {
+							"amount": "20.00",
+							"currency_code": "USD"
+						}
+					},
+					"total_line_items_price": "398.00",
+					"total_line_items_price_set": {
+						"shop_money": {
+							"amount": "398.00",
+							"currency_code": "USD"
+						},
+						"presentment_money": {
+							"amount": "398.00",
+							"currency_code": "USD"
+						}
+					},
+					"total_outstanding": "398.00",
+					"total_price": "388.00",
+					"total_price_set": {
+						"shop_money": {
+							"amount": "388.00",
+							"currency_code": "USD"
+						},
+						"presentment_money": {
+							"amount": "388.00",
+							"currency_code": "USD"
+						}
+					},
+					"total_shipping_price_set": {
+						"shop_money": {
+							"amount": "10.00",
+							"currency_code": "USD"
+						},
+						"presentment_money": {
+							"amount": "10.00",
+							"currency_code": "USD"
+						}
+					},
+					"total_tax": "0.00",
+					"total_tax_set": {
+						"shop_money": {
+							"amount": "0.00",
+							"currency_code": "USD"
+						},
+						"presentment_money": {
+							"amount": "0.00",
+							"currency_code": "USD"
+						}
+					},
+					"total_tip_received": "0.00",
+					"total_weight": 0,
+					"updated_at": "2021-12-31T19:00:00-05:00",
+					"user_id": null,
+					"billing_address": {
+						"first_name": "Steve",
+						"address1": "123 Shipping Street",
+						"phone": "555-555-SHIP",
+						"city": "Shippington",
+						"zip": "40003",
+						"province": "Kentucky",
+						"country": "United States",
+						"last_name": "Shipper",
+						"address2": null,
+						"company": "Shipping Company",
+						"latitude": null,
+						"longitude": null,
+						"name": "Steve Shipper",
+						"country_code": "US",
+						"province_code": "KY"
+					},
+					"customer": {
+						"id": {
+							"low": -1813255056,
+							"high": 26847847,
+							"unsigned": false
+						},
+						"email": "john@example.com",
+						"created_at": null,
+						"updated_at": null,
+						"first_name": "John",
+						"last_name": "Smith",
+						"state": "disabled",
+						"note": null,
+						"verified_email": true,
+						"multipass_identifier": null,
+						"tax_exempt": false,
+						"phone": null,
+						"email_marketing_consent": {
+							"state": "not_subscribed",
+							"opt_in_level": null,
+							"consent_updated_at": null
+						},
+						"sms_marketing_consent": null,
+						"tags": "",
+						"currency": "USD",
+						"tax_exemptions": [],
+						"admin_graphql_api_id": "gid://shopify/Customer/115310627314723954",
+						"default_address": {
+							"id": {
+								"low": -1580471808,
+								"high": 166530597,
+								"unsigned": false
+							},
+							"customer_id": {
+								"low": -1813255056,
+								"high": 26847847,
+								"unsigned": false
+							},
+							"first_name": null,
+							"last_name": null,
+							"company": null,
+							"address1": "123 Elm St.",
+							"address2": null,
+							"city": "Ottawa",
+							"province": "Ontario",
+							"country": "Canada",
+							"zip": "K2H7A8",
+							"phone": "123-123-1234",
+							"name": "",
+							"province_code": "ON",
+							"country_code": "CA",
+							"country_name": "Canada",
+							"default": true
+						}
+					},
+					"discount_applications": [],
+					"fulfillments": [],
+					"line_items": [
+						{
+							"id": {
+								"low": -656952192,
+								"high": 201759466,
+								"unsigned": false
+							},
+							"admin_graphql_api_id": "gid://shopify/LineItem/866550311766439020",
+							"attributed_staffs": [
+								{
+									"id": "gid://shopify/StaffMember/902541635",
+									"quantity": 1
+								}
+							],
+							"current_quantity": 1,
+							"fulfillable_quantity": 1,
+							"fulfillment_service": "manual",
+							"fulfillment_status": null,
+							"gift_card": false,
+							"grams": 567,
+							"name": "IPod Nano - 8GB",
+							"price": "199.00",
+							"price_set": {
+								"shop_money": {
+									"amount": "199.00",
+									"currency_code": "USD"
+								},
+								"presentment_money": {
+									"amount": "199.00",
+									"currency_code": "USD"
+								}
+							},
+							"product_exists": true,
+							"product_id": 632910392,
+							"properties": [],
+							"quantity": 1,
+							"requires_shipping": true,
+							"sku": "IPOD2008PINK",
+							"taxable": true,
+							"title": "IPod Nano - 8GB",
+							"total_discount": "0.00",
+							"total_discount_set": {
+								"shop_money": {
+									"amount": "0.00",
+									"currency_code": "USD"
+								},
+								"presentment_money": {
+									"amount": "0.00",
+									"currency_code": "USD"
+								}
+							},
+							"variant_id": 808950810,
+							"variant_inventory_management": "shopify",
+							"variant_title": null,
+							"vendor": null,
+							"tax_lines": [],
+							"duties": [],
+							"discount_allocations": []
+						},
+						{
+							"id": {
+								"low": -2048629152,
+								"high": 32887317,
+								"unsigned": false
+							},
+							"admin_graphql_api_id": "gid://shopify/LineItem/141249953214522974",
+							"attributed_staffs": [],
+							"current_quantity": 1,
+							"fulfillable_quantity": 1,
+							"fulfillment_service": "manual",
+							"fulfillment_status": null,
+							"gift_card": false,
+							"grams": 567,
+							"name": "IPod Nano - 8GB",
+							"price": "199.00",
+							"price_set": {
+								"shop_money": {
+									"amount": "199.00",
+									"currency_code": "USD"
+								},
+								"presentment_money": {
+									"amount": "199.00",
+									"currency_code": "USD"
+								}
+							},
+							"product_exists": true,
+							"product_id": 632910392,
+							"properties": [],
+							"quantity": 1,
+							"requires_shipping": true,
+							"sku": "IPOD2008PINK",
+							"taxable": true,
+							"title": "IPod Nano - 8GB",
+							"total_discount": "0.00",
+							"total_discount_set": {
+								"shop_money": {
+									"amount": "0.00",
+									"currency_code": "USD"
+								},
+								"presentment_money": {
+									"amount": "0.00",
+									"currency_code": "USD"
+								}
+							},
+							"variant_id": 808950810,
+							"variant_inventory_management": "shopify",
+							"variant_title": null,
+							"vendor": null,
+							"tax_lines": [],
+							"duties": [],
+							"discount_allocations": []
+						}
+					],
+					"payment_terms": null,
+					"refunds": [],
+					"shipping_address": {
+						"first_name": "Steve",
+						"address1": "123 Shipping Street",
+						"phone": "555-555-SHIP",
+						"city": "Shippington",
+						"zip": "40003",
+						"province": "Kentucky",
+						"country": "United States",
+						"last_name": "Shipper",
+						"address2": null,
+						"company": "Shipping Company",
+						"latitude": null,
+						"longitude": null,
+						"name": "Steve Shipper",
+						"country_code": "US",
+						"province_code": "KY"
+					},
+					"shipping_lines": [
+						{
+							"id": {
+								"low": 1862737440,
+								"high": 63301610,
+								"unsigned": false
+							},
+							"carrier_identifier": null,
+							"code": null,
+							"discounted_price": "10.00",
+							"discounted_price_set": {
+								"shop_money": {
+									"amount": "10.00",
+									"currency_code": "USD"
+								},
+								"presentment_money": {
+									"amount": "10.00",
+									"currency_code": "USD"
+								}
+							},
+							"is_removed": false,
+							"phone": null,
+							"price": "10.00",
+							"price_set": {
+								"shop_money": {
+									"amount": "10.00",
+									"currency_code": "USD"
+								},
+								"presentment_money": {
+									"amount": "10.00",
+									"currency_code": "USD"
+								}
+							},
+							"requested_fulfillment_service_id": null,
+							"source": "shopify",
+							"title": "Generic Shipping",
+							"tax_lines": [],
+							"discount_allocations": []
+						}
+					]
+				},
+				"category": null
+			},
+			{
+				"topic": "shopify_orders_updated",
+				"title": "Order Updated",
+				"description": "Workflow starts when an order is updated",
+				"sample_payload": {
+					"id": {
+						"low": -784899584,
+						"high": 191149979,
+						"unsigned": false
+					},
+					"admin_graphql_api_id": "gid://shopify/Order/820982911946154508",
+					"app_id": null,
+					"browser_ip": null,
+					"buyer_accepts_marketing": true,
+					"cancel_reason": "customer",
+					"cancelled_at": "2021-12-31T19:00:00-05:00",
+					"cart_token": null,
+					"checkout_id": null,
+					"checkout_token": null,
+					"client_details": null,
+					"closed_at": null,
+					"confirmation_number": null,
+					"confirmed": false,
+					"contact_email": "jon@example.com",
+					"created_at": "2021-12-31T19:00:00-05:00",
+					"currency": "USD",
+					"current_subtotal_price": "398.00",
+					"current_subtotal_price_set": {
+						"shop_money": {
+							"amount": "398.00",
+							"currency_code": "USD"
+						},
+						"presentment_money": {
+							"amount": "398.00",
+							"currency_code": "USD"
+						}
+					},
+					"current_total_additional_fees_set": null,
+					"current_total_discounts": "0.00",
+					"current_total_discounts_set": {
+						"shop_money": {
+							"amount": "0.00",
+							"currency_code": "USD"
+						},
+						"presentment_money": {
+							"amount": "0.00",
+							"currency_code": "USD"
+						}
+					},
+					"current_total_duties_set": null,
+					"current_total_price": "398.00",
+					"current_total_price_set": {
+						"shop_money": {
+							"amount": "398.00",
+							"currency_code": "USD"
+						},
+						"presentment_money": {
+							"amount": "398.00",
+							"currency_code": "USD"
+						}
+					},
+					"current_total_tax": "0.00",
+					"current_total_tax_set": {
+						"shop_money": {
+							"amount": "0.00",
+							"currency_code": "USD"
+						},
+						"presentment_money": {
+							"amount": "0.00",
+							"currency_code": "USD"
+						}
+					},
+					"customer_locale": "en",
+					"device_id": null,
+					"discount_codes": [],
+					"email": "jon@example.com",
+					"estimated_taxes": false,
+					"financial_status": "voided",
+					"fulfillment_status": "pending",
+					"landing_site": null,
+					"landing_site_ref": null,
+					"location_id": null,
+					"merchant_of_record_app_id": null,
+					"name": "#9999",
+					"note": null,
+					"note_attributes": [],
+					"number": 234,
+					"order_number": 1234,
+					"order_status_url": "https://jsmith.myshopify.com/548380009/orders/123456abcd/authenticate?key=abcdefg",
+					"original_total_additional_fees_set": null,
+					"original_total_duties_set": null,
+					"payment_gateway_names": ["visa", "bogus"],
+					"phone": null,
+					"po_number": null,
+					"presentment_currency": "USD",
+					"processed_at": "2021-12-31T19:00:00-05:00",
+					"reference": null,
+					"referring_site": null,
+					"source_identifier": null,
+					"source_name": "web",
+					"source_url": null,
+					"subtotal_price": "388.00",
+					"subtotal_price_set": {
+						"shop_money": {
+							"amount": "388.00",
+							"currency_code": "USD"
+						},
+						"presentment_money": {
+							"amount": "388.00",
+							"currency_code": "USD"
+						}
+					},
+					"tags": "tag1, tag2",
+					"tax_exempt": false,
+					"tax_lines": [],
+					"taxes_included": false,
+					"test": true,
+					"token": "123456abcd",
+					"total_discounts": "20.00",
+					"total_discounts_set": {
+						"shop_money": {
+							"amount": "20.00",
+							"currency_code": "USD"
+						},
+						"presentment_money": {
+							"amount": "20.00",
+							"currency_code": "USD"
+						}
+					},
+					"total_line_items_price": "398.00",
+					"total_line_items_price_set": {
+						"shop_money": {
+							"amount": "398.00",
+							"currency_code": "USD"
+						},
+						"presentment_money": {
+							"amount": "398.00",
+							"currency_code": "USD"
+						}
+					},
+					"total_outstanding": "398.00",
+					"total_price": "388.00",
+					"total_price_set": {
+						"shop_money": {
+							"amount": "388.00",
+							"currency_code": "USD"
+						},
+						"presentment_money": {
+							"amount": "388.00",
+							"currency_code": "USD"
+						}
+					},
+					"total_shipping_price_set": {
+						"shop_money": {
+							"amount": "10.00",
+							"currency_code": "USD"
+						},
+						"presentment_money": {
+							"amount": "10.00",
+							"currency_code": "USD"
+						}
+					},
+					"total_tax": "0.00",
+					"total_tax_set": {
+						"shop_money": {
+							"amount": "0.00",
+							"currency_code": "USD"
+						},
+						"presentment_money": {
+							"amount": "0.00",
+							"currency_code": "USD"
+						}
+					},
+					"total_tip_received": "0.00",
+					"total_weight": 0,
+					"updated_at": "2021-12-31T19:00:00-05:00",
+					"user_id": null,
+					"billing_address": {
+						"first_name": "Steve",
+						"address1": "123 Shipping Street",
+						"phone": "555-555-SHIP",
+						"city": "Shippington",
+						"zip": "40003",
+						"province": "Kentucky",
+						"country": "United States",
+						"last_name": "Shipper",
+						"address2": null,
+						"company": "Shipping Company",
+						"latitude": null,
+						"longitude": null,
+						"name": "Steve Shipper",
+						"country_code": "US",
+						"province_code": "KY"
+					},
+					"customer": {
+						"id": {
+							"low": -1813255056,
+							"high": 26847847,
+							"unsigned": false
+						},
+						"email": "john@example.com",
+						"created_at": null,
+						"updated_at": null,
+						"first_name": "John",
+						"last_name": "Smith",
+						"state": "disabled",
+						"note": null,
+						"verified_email": true,
+						"multipass_identifier": null,
+						"tax_exempt": false,
+						"phone": null,
+						"email_marketing_consent": {
+							"state": "not_subscribed",
+							"opt_in_level": null,
+							"consent_updated_at": null
+						},
+						"sms_marketing_consent": null,
+						"tags": "",
+						"currency": "USD",
+						"tax_exemptions": [],
+						"admin_graphql_api_id": "gid://shopify/Customer/115310627314723954",
+						"default_address": {
+							"id": {
+								"low": -1580471808,
+								"high": 166530597,
+								"unsigned": false
+							},
+							"customer_id": {
+								"low": -1813255056,
+								"high": 26847847,
+								"unsigned": false
+							},
+							"first_name": null,
+							"last_name": null,
+							"company": null,
+							"address1": "123 Elm St.",
+							"address2": null,
+							"city": "Ottawa",
+							"province": "Ontario",
+							"country": "Canada",
+							"zip": "K2H7A8",
+							"phone": "123-123-1234",
+							"name": "",
+							"province_code": "ON",
+							"country_code": "CA",
+							"country_name": "Canada",
+							"default": true
+						}
+					},
+					"discount_applications": [],
+					"fulfillments": [],
+					"line_items": [
+						{
+							"id": {
+								"low": -656952192,
+								"high": 201759466,
+								"unsigned": false
+							},
+							"admin_graphql_api_id": "gid://shopify/LineItem/866550311766439020",
+							"attributed_staffs": [
+								{
+									"id": "gid://shopify/StaffMember/902541635",
+									"quantity": 1
+								}
+							],
+							"current_quantity": 1,
+							"fulfillable_quantity": 1,
+							"fulfillment_service": "manual",
+							"fulfillment_status": null,
+							"gift_card": false,
+							"grams": 567,
+							"name": "IPod Nano - 8GB",
+							"price": "199.00",
+							"price_set": {
+								"shop_money": {
+									"amount": "199.00",
+									"currency_code": "USD"
+								},
+								"presentment_money": {
+									"amount": "199.00",
+									"currency_code": "USD"
+								}
+							},
+							"product_exists": true,
+							"product_id": 632910392,
+							"properties": [],
+							"quantity": 1,
+							"requires_shipping": true,
+							"sku": "IPOD2008PINK",
+							"taxable": true,
+							"title": "IPod Nano - 8GB",
+							"total_discount": "0.00",
+							"total_discount_set": {
+								"shop_money": {
+									"amount": "0.00",
+									"currency_code": "USD"
+								},
+								"presentment_money": {
+									"amount": "0.00",
+									"currency_code": "USD"
+								}
+							},
+							"variant_id": 808950810,
+							"variant_inventory_management": "shopify",
+							"variant_title": null,
+							"vendor": null,
+							"tax_lines": [],
+							"duties": [],
+							"discount_allocations": []
+						},
+						{
+							"id": {
+								"low": -2048629152,
+								"high": 32887317,
+								"unsigned": false
+							},
+							"admin_graphql_api_id": "gid://shopify/LineItem/141249953214522974",
+							"attributed_staffs": [],
+							"current_quantity": 1,
+							"fulfillable_quantity": 1,
+							"fulfillment_service": "manual",
+							"fulfillment_status": null,
+							"gift_card": false,
+							"grams": 567,
+							"name": "IPod Nano - 8GB",
+							"price": "199.00",
+							"price_set": {
+								"shop_money": {
+									"amount": "199.00",
+									"currency_code": "USD"
+								},
+								"presentment_money": {
+									"amount": "199.00",
+									"currency_code": "USD"
+								}
+							},
+							"product_exists": true,
+							"product_id": 632910392,
+							"properties": [],
+							"quantity": 1,
+							"requires_shipping": true,
+							"sku": "IPOD2008PINK",
+							"taxable": true,
+							"title": "IPod Nano - 8GB",
+							"total_discount": "0.00",
+							"total_discount_set": {
+								"shop_money": {
+									"amount": "0.00",
+									"currency_code": "USD"
+								},
+								"presentment_money": {
+									"amount": "0.00",
+									"currency_code": "USD"
+								}
+							},
+							"variant_id": 808950810,
+							"variant_inventory_management": "shopify",
+							"variant_title": null,
+							"vendor": null,
+							"tax_lines": [],
+							"duties": [],
+							"discount_allocations": []
+						}
+					],
+					"payment_terms": null,
+					"refunds": [],
+					"shipping_address": {
+						"first_name": "Steve",
+						"address1": "123 Shipping Street",
+						"phone": "555-555-SHIP",
+						"city": "Shippington",
+						"zip": "40003",
+						"province": "Kentucky",
+						"country": "United States",
+						"last_name": "Shipper",
+						"address2": null,
+						"company": "Shipping Company",
+						"latitude": null,
+						"longitude": null,
+						"name": "Steve Shipper",
+						"country_code": "US",
+						"province_code": "KY"
+					},
+					"shipping_lines": [
+						{
+							"id": {
+								"low": 1862737440,
+								"high": 63301610,
+								"unsigned": false
+							},
+							"carrier_identifier": null,
+							"code": null,
+							"discounted_price": "10.00",
+							"discounted_price_set": {
+								"shop_money": {
+									"amount": "10.00",
+									"currency_code": "USD"
+								},
+								"presentment_money": {
+									"amount": "10.00",
+									"currency_code": "USD"
+								}
+							},
+							"is_removed": false,
+							"phone": null,
+							"price": "10.00",
+							"price_set": {
+								"shop_money": {
+									"amount": "10.00",
+									"currency_code": "USD"
+								},
+								"presentment_money": {
+									"amount": "10.00",
+									"currency_code": "USD"
+								}
+							},
+							"requested_fulfillment_service_id": null,
+							"source": "shopify",
+							"title": "Generic Shipping",
+							"tax_lines": [],
+							"discount_allocations": []
+						}
+					]
+				},
+				"category": null
+			},
+			{
+				"topic": "shopify_products_create",
+				"title": "Product Created",
+				"description": "Workflow starts when a new product is created",
+				"sample_payload": {
+					"admin_graphql_api_id": "gid://shopify/Product/788032119674292922",
+					"body_html": "An example T-Shirt",
+					"created_at": null,
+					"handle": "example-t-shirt",
+					"id": {
+						"low": -1530344832,
+						"high": 183478025,
+						"unsigned": false
+					},
+					"product_type": "Shirts",
+					"published_at": "2021-12-31T19:00:00-05:00",
+					"template_suffix": null,
+					"title": "Example T-Shirt",
+					"updated_at": "2021-12-31T19:00:00-05:00",
+					"vendor": "Acme",
+					"status": "active",
+					"published_scope": "web",
+					"tags": "example, mens, t-shirt",
+					"variants": [
+						{
+							"admin_graphql_api_id": "gid://shopify/ProductVariant/642667041472713922",
+							"barcode": null,
+							"compare_at_price": "24.99",
+							"created_at": "2021-12-29T19:00:00-05:00",
+							"id": {
+								"low": -338356992,
+								"high": 149632580,
+								"unsigned": false
+							},
+							"inventory_policy": "deny",
+							"position": 1,
+							"price": "19.99",
+							"product_id": {
+								"low": -1530344832,
+								"high": 183478025,
+								"unsigned": false
+							},
+							"sku": "example-shirt-s",
+							"taxable": true,
+							"title": "Small",
+							"updated_at": "2021-12-30T19:00:00-05:00",
+							"option1": "Small",
+							"option2": null,
+							"option3": null,
+							"image_id": null,
+							"inventory_item_id": null,
+							"inventory_quantity": 75,
+							"old_inventory_quantity": 75
+						},
+						{
+							"admin_graphql_api_id": "gid://shopify/ProductVariant/757650484644203962",
+							"barcode": null,
+							"compare_at_price": "24.99",
+							"created_at": "2021-12-29T19:00:00-05:00",
+							"id": {
+								"low": 18795904,
+								"high": 176404250,
+								"unsigned": false
+							},
+							"inventory_policy": "deny",
+							"position": 2,
+							"price": "19.99",
+							"product_id": {
+								"low": -1530344832,
+								"high": 183478025,
+								"unsigned": false
+							},
+							"sku": "example-shirt-m",
+							"taxable": true,
+							"title": "Medium",
+							"updated_at": "2021-12-31T19:00:00-05:00",
+							"option1": "Medium",
+							"option2": null,
+							"option3": null,
+							"image_id": null,
+							"inventory_item_id": null,
+							"inventory_quantity": 50,
+							"old_inventory_quantity": 50
+						}
+					],
+					"options": [],
+					"images": [],
+					"image": null,
+					"media": [],
+					"variant_gids": [
+						{
+							"admin_graphql_api_id": "gid://shopify/ProductVariant/757650484644203962",
+							"updated_at": "2022-01-01T00:00:00.000Z"
+						},
+						{
+							"admin_graphql_api_id": "gid://shopify/ProductVariant/642667041472713922",
+							"updated_at": "2021-12-31T00:00:00.000Z"
+						}
+					]
+				},
+				"category": null
+			},
+			{
+				"topic": "shopify_products_delete",
+				"title": "Product Deleted",
+				"description": "Workflow starts when a product is deleted",
+				"sample_payload": {
+					"id": {
+						"low": -1530344832,
+						"high": 183478025,
+						"unsigned": false
+					}
+				},
+				"category": null
+			},
+			{
+				"topic": "shopify_products_update",
+				"title": "Product Updated",
+				"description": "Workflow starts when a product is updated",
+				"sample_payload": {
+					"admin_graphql_api_id": "gid://shopify/Product/788032119674292922",
+					"body_html": "An example T-Shirt",
+					"created_at": null,
+					"handle": "example-t-shirt",
+					"id": {
+						"low": -1530344832,
+						"high": 183478025,
+						"unsigned": false
+					},
+					"product_type": "Shirts",
+					"published_at": "2021-12-31T19:00:00-05:00",
+					"template_suffix": null,
+					"title": "Example T-Shirt",
+					"updated_at": "2021-12-31T19:00:00-05:00",
+					"vendor": "Acme",
+					"status": "active",
+					"published_scope": "web",
+					"tags": "example, mens, t-shirt",
+					"variants": [
+						{
+							"admin_graphql_api_id": "gid://shopify/ProductVariant/642667041472713922",
+							"barcode": null,
+							"compare_at_price": "24.99",
+							"created_at": "2021-12-29T19:00:00-05:00",
+							"id": {
+								"low": -338356992,
+								"high": 149632580,
+								"unsigned": false
+							},
+							"inventory_policy": "deny",
+							"position": 1,
+							"price": "19.99",
+							"product_id": {
+								"low": -1530344832,
+								"high": 183478025,
+								"unsigned": false
+							},
+							"sku": "example-shirt-s",
+							"taxable": true,
+							"title": "Small",
+							"updated_at": "2021-12-30T19:00:00-05:00",
+							"option1": "Small",
+							"option2": null,
+							"option3": null,
+							"image_id": null,
+							"inventory_item_id": null,
+							"inventory_quantity": 75,
+							"old_inventory_quantity": 75
+						},
+						{
+							"admin_graphql_api_id": "gid://shopify/ProductVariant/757650484644203962",
+							"barcode": null,
+							"compare_at_price": "24.99",
+							"created_at": "2021-12-29T19:00:00-05:00",
+							"id": {
+								"low": 18795904,
+								"high": 176404250,
+								"unsigned": false
+							},
+							"inventory_policy": "deny",
+							"position": 2,
+							"price": "19.99",
+							"product_id": {
+								"low": -1530344832,
+								"high": 183478025,
+								"unsigned": false
+							},
+							"sku": "example-shirt-m",
+							"taxable": true,
+							"title": "Medium",
+							"updated_at": "2021-12-31T19:00:00-05:00",
+							"option1": "Medium",
+							"option2": null,
+							"option3": null,
+							"image_id": null,
+							"inventory_item_id": null,
+							"inventory_quantity": 50,
+							"old_inventory_quantity": 50
+						}
+					],
+					"options": [],
+					"images": [],
+					"image": null,
+					"media": [],
+					"variant_gids": [
+						{
+							"admin_graphql_api_id": "gid://shopify/ProductVariant/757650484644203962",
+							"updated_at": "2022-01-01T00:00:00.000Z"
+						},
+						{
+							"admin_graphql_api_id": "gid://shopify/ProductVariant/642667041472713922",
+							"updated_at": "2021-12-31T00:00:00.000Z"
+						}
+					]
+				},
+				"category": null
+			},
+			{
+				"topic": "shopify_fulfillments_create",
+				"title": "Fulfillment Created",
+				"description": "Workflow starts when a new fulfillment is created",
+				"sample_payload": {
+					"id": 5402671219009,
+					"order_id": 6093214187841,
+					"status": "success",
+					"created_at": "2024-10-16T03:52:57-04:00",
+					"service": "manual",
+					"updated_at": "2024-10-16T03:52:57-04:00",
+					"tracking_company": "99 Minutos",
+					"shipment_status": null,
+					"location_id": 101932499265,
+					"origin_address": null,
+					"email": "gokul@reviewbit.app",
+					"destination": {
+						"first_name": "Gokul",
+						"address1": "UL CyberPark Ummalathoor",
+						"phone": "+918848870758",
+						"city": "Kozhikode",
+						"zip": "673016",
+						"province": "Kerala",
+						"country": "India",
+						"last_name": "Raj",
+						"address2": null,
+						"company": "Reviewbit",
+						"latitude": null,
+						"longitude": null,
+						"name": "Gokul Raj",
+						"country_code": "IN",
+						"province_code": "KL"
+					},
+					"line_items": [
+						{
+							"id": 15357027680577,
+							"variant_id": 49472516194625,
+							"title": "The Collection Snowboard: Liquid",
+							"quantity": 1,
+							"sku": null,
+							"variant_title": null,
+							"vendor": "Hydrogen Vendor",
+							"fulfillment_service": "manual",
+							"product_id": 9745331847489,
+							"requires_shipping": true,
+							"taxable": true,
+							"gift_card": false,
+							"name": "The Collection Snowboard: Liquid",
+							"variant_inventory_management": "shopify",
+							"properties": [],
+							"product_exists": true,
+							"fulfillable_quantity": 0,
+							"grams": 0,
+							"price": "749.95",
+							"total_discount": "0.00",
+							"fulfillment_status": "fulfilled",
+							"price_set": {
+								"shop_money": {
+									"amount": "749.95",
+									"currency_code": "INR"
+								},
+								"presentment_money": {
+									"amount": "749.95",
+									"currency_code": "INR"
+								}
+							},
+							"total_discount_set": {
+								"shop_money": {
+									"amount": "0.00",
+									"currency_code": "INR"
+								},
+								"presentment_money": {
+									"amount": "0.00",
+									"currency_code": "INR"
+								}
+							},
+							"discount_allocations": [],
+							"duties": [],
+							"admin_graphql_api_id": "gid://shopify/LineItem/15357027680577",
+							"tax_lines": [
+								{
+									"title": "IGST",
+									"price": "134.99",
+									"rate": 0.18,
+									"channel_liable": false,
+									"price_set": {
+										"shop_money": {
+											"amount": "134.99",
+											"currency_code": "INR"
+										},
+										"presentment_money": {
+											"amount": "134.99",
+											"currency_code": "INR"
+										}
+									}
+								}
+							]
+						}
+					],
+					"tracking_number": "232324",
+					"tracking_numbers": ["232324"],
+					"tracking_url": "https://www.99minutos.com/tracking/232324",
+					"tracking_urls": [
+						"https://www.99minutos.com/tracking/232324"
+					],
+					"receipt": {},
+					"name": "#1005.1",
+					"admin_graphql_api_id": "gid://shopify/Fulfillment/5402671219009"
+				},
+				"category": null
+			},
+			{
+				"topic": "shopify_fulfillments_update",
+				"title": "Fulfillment Updated",
+				"description": "Workflow starts when a fulfillment is updated",
+				"sample_payload": {
+					"id": 5402671219009,
+					"order_id": 6093214187841,
+					"status": "success",
+					"created_at": "2024-10-16T03:52:57-04:00",
+					"service": "manual",
+					"updated_at": "2024-10-16T03:52:57-04:00",
+					"tracking_company": "99 Minutos",
+					"shipment_status": null,
+					"location_id": 101932499265,
+					"origin_address": null,
+					"email": "gokul@reviewbit.app",
+					"destination": {
+						"first_name": "Gokul",
+						"address1": "UL CyberPark Ummalathoor",
+						"phone": "+918848870758",
+						"city": "Kozhikode",
+						"zip": "673016",
+						"province": "Kerala",
+						"country": "India",
+						"last_name": "Raj",
+						"address2": null,
+						"company": "Reviewbit",
+						"latitude": null,
+						"longitude": null,
+						"name": "Gokul Raj",
+						"country_code": "IN",
+						"province_code": "KL"
+					},
+					"line_items": [
+						{
+							"id": 15357027680577,
+							"variant_id": 49472516194625,
+							"title": "The Collection Snowboard: Liquid",
+							"quantity": 1,
+							"sku": null,
+							"variant_title": null,
+							"vendor": "Hydrogen Vendor",
+							"fulfillment_service": "manual",
+							"product_id": 9745331847489,
+							"requires_shipping": true,
+							"taxable": true,
+							"gift_card": false,
+							"name": "The Collection Snowboard: Liquid",
+							"variant_inventory_management": "shopify",
+							"properties": [],
+							"product_exists": true,
+							"fulfillable_quantity": 0,
+							"grams": 0,
+							"price": "749.95",
+							"total_discount": "0.00",
+							"fulfillment_status": "fulfilled",
+							"price_set": {
+								"shop_money": {
+									"amount": "749.95",
+									"currency_code": "INR"
+								},
+								"presentment_money": {
+									"amount": "749.95",
+									"currency_code": "INR"
+								}
+							},
+							"total_discount_set": {
+								"shop_money": {
+									"amount": "0.00",
+									"currency_code": "INR"
+								},
+								"presentment_money": {
+									"amount": "0.00",
+									"currency_code": "INR"
+								}
+							},
+							"discount_allocations": [],
+							"duties": [],
+							"admin_graphql_api_id": "gid://shopify/LineItem/15357027680577",
+							"tax_lines": [
+								{
+									"title": "IGST",
+									"price": "134.99",
+									"rate": 0.18,
+									"channel_liable": false,
+									"price_set": {
+										"shop_money": {
+											"amount": "134.99",
+											"currency_code": "INR"
+										},
+										"presentment_money": {
+											"amount": "134.99",
+											"currency_code": "INR"
+										}
+									}
+								}
+							]
+						}
+					],
+					"tracking_number": "232324",
+					"tracking_numbers": ["232324"],
+					"tracking_url": "https://www.99minutos.com/tracking/232324",
+					"tracking_urls": [
+						"https://www.99minutos.com/tracking/232324"
+					],
+					"receipt": {},
+					"name": "#1005.1",
+					"admin_graphql_api_id": "gid://shopify/Fulfillment/5402671219009"
+				},
+				"category": null
+			},
+			{
+				"topic": "shopify_inventory_items_create",
+				"title": "Inventory Item Created",
+				"description": "Workflow starts when a new inventory item is created",
+				"sample_payload": {
+					"id": {
+						"low": 1862737440,
+						"high": 63301610,
+						"unsigned": false
+					},
+					"sku": "example-sku",
+					"created_at": "2021-12-31T19:00:00-05:00",
+					"updated_at": "2021-12-31T19:00:00-05:00",
+					"requires_shipping": true,
+					"cost": null,
+					"country_code_of_origin": null,
+					"province_code_of_origin": null,
+					"harmonized_system_code": null,
+					"tracked": true,
+					"country_harmonized_system_codes": [],
+					"admin_graphql_api_id": "gid://shopify/InventoryItem/271878346596884015"
+				},
+				"category": null
+			},
+			{
+				"topic": "shopify_inventory_items_delete",
+				"title": "Inventory Item Deleted",
+				"description": "Workflow starts when a inventory item is deleted",
+				"sample_payload": {
+					"id": {
+						"low": 1862737440,
+						"high": 63301610,
+						"unsigned": false
+					},
+					"country_code_of_origin": null,
+					"province_code_of_origin": null,
+					"harmonized_system_code": null,
+					"country_harmonized_system_codes": [],
+					"admin_graphql_api_id": "gid://shopify/InventoryItem/271878346596884015"
+				},
+				"category": null
+			},
+			{
+				"topic": "shopify_inventory_items_update",
+				"title": "Inventory Item Updated",
+				"description": "Workflow starts when a inventory item is updated",
+				"sample_payload": {
+					"id": {
+						"low": 1862737440,
+						"high": 63301610,
+						"unsigned": false
+					},
+					"sku": "example-sku",
+					"created_at": "2021-12-31T19:00:00-05:00",
+					"updated_at": "2021-12-31T19:00:00-05:00",
+					"requires_shipping": true,
+					"cost": null,
+					"country_code_of_origin": null,
+					"province_code_of_origin": null,
+					"harmonized_system_code": null,
+					"tracked": true,
+					"country_harmonized_system_codes": [],
+					"admin_graphql_api_id": "gid://shopify/InventoryItem/271878346596884015"
+				},
+				"category": null
+			},
+			{
+				"topic": "shopify_checkouts_create",
+				"title": "Checkout Created",
+				"description": "Workflow starts when a new checkout is created",
+				"sample_payload": {
+					"id": 43733336686913,
+					"token": "205a062ad206253443501779e7eddcb0",
+					"cart_token": "Z2NwLXVzLWVhc3QxOjAxSkNDUkdIQ0tBS1k2WDJWOVZRM1dONU1I",
+					"email": null,
+					"gateway": null,
+					"buyer_accepts_marketing": false,
+					"buyer_accepts_sms_marketing": false,
+					"sms_marketing_phone": null,
+					"created_at": "2024-11-11T04:43:01+00:00",
+					"updated_at": "2024-11-10T23:43:03-05:00",
+					"landing_site": "/",
+					"note": "",
+					"note_attributes": [],
+					"referring_site": "",
+					"shipping_lines": [],
+					"shipping_address": [],
+					"taxes_included": false,
+					"total_weight": 0,
+					"currency": "INR",
+					"completed_at": null,
+					"phone": null,
+					"customer_locale": "en-IN",
+					"line_items": [
+						{
+							"key": "49472516194625",
+							"fulfillment_service": "manual",
+							"gift_card": false,
+							"grams": 0,
+							"presentment_title": "The Collection Snowboard: Liquid",
+							"presentment_variant_title": "",
+							"product_id": 9745331847489,
+							"quantity": 1,
+							"requires_shipping": true,
+							"sku": null,
+							"tax_lines": [
+								{
+									"position": 1,
+									"price": "67.50",
+									"rate": 0.09,
+									"title": "CGST",
+									"source": "Shopify",
+									"compare_at": null,
+									"zone": "country",
+									"channel_liable": false,
+									"identifier": null
+								}
+							],
+							"taxable": true,
+							"title": "The Collection Snowboard: Liquid",
+							"variant_id": 49472516194625,
+							"variant_title": "",
+							"variant_price": "749.95",
+							"vendor": "Hydrogen Vendor",
+							"unit_price_measurement": {
+								"measured_type": null,
+								"quantity_value": null,
+								"quantity_unit": null,
+								"reference_value": null,
+								"reference_unit": null
+							},
+							"compare_at_price": null,
+							"line_price": "749.95",
+							"price": "749.95",
+							"applied_discounts": [],
+							"destination_location_id": null,
+							"user_id": null,
+							"rank": null,
+							"origin_location_id": null,
+							"properties": {}
+						}
+					],
+					"name": "#43733336686913",
+					"abandoned_checkout_url": "https://flowflex-dev.myshopify.com/89924960577/checkouts/ac/Z2NwLXVzLWVhc3QxOjAxSkNDUkdIQ0tBS1k2WDJWOVZRM1dONU1I/recover?key=a1aeaf76655a87ac8012b924ac918ef1&locale=en-IN",
+					"discount_codes": [],
+					"tax_lines": [
+						{
+							"price": "67.50",
+							"rate": 0.09,
+							"title": "CGST"
+						}
+					],
+					"presentment_currency": "INR",
+					"source_name": "web",
+					"total_line_items_price": "749.95",
+					"total_tax": "67.50",
+					"total_discounts": "0.00",
+					"subtotal_price": "749.95",
+					"total_price": "817.45",
+					"total_duties": "0.00",
+					"device_id": null,
+					"user_id": null,
+					"location_id": null,
+					"source_identifier": null,
+					"source_url": null,
+					"source": null,
+					"closed_at": null
+				},
+				"category": null
+			},
+			{
+				"topic": "shopify_checkouts_delete",
+				"title": "Checkout Deleted",
+				"description": "Workflow starts when a checkout is deleted",
+				"sample_payload": {
+					"id": {
+						"low": 22727424,
+						"high": 228597801,
+						"unsigned": false
+					},
+					"presentment_currency": "USD",
+					"buyer_accepts_sms_marketing": false,
+					"sms_marketing_phone": null,
+					"total_discounts": "0.00",
+					"total_line_items_price": "398.00",
+					"total_price": "421.88",
+					"total_tax": "23.88",
+					"subtotal_price": "398.00",
+					"cart_token": "eeafa272cebfd4b22385bc4b645e762c",
+					"total_duties": null,
+					"reservation_token": null
+				},
+				"category": null
+			},
+			{
+				"topic": "shopify_checkouts_update",
+				"title": "Checkout Updated",
+				"description": "Workflow starts when a checkout is updated",
+				"sample_payload": {
+					"id": 43733336686913,
+					"token": "205a062ad206253443501779e7eddcb0",
+					"cart_token": "Z2NwLXVzLWVhc3QxOjAxSkNDUkdIQ0tBS1k2WDJWOVZRM1dONU1I",
+					"email": "shahid@reviewbit.app",
+					"gateway": null,
+					"buyer_accepts_marketing": false,
+					"buyer_accepts_sms_marketing": false,
+					"sms_marketing_phone": null,
+					"created_at": "2024-11-11T04:43:01+00:00",
+					"updated_at": "2024-11-10T23:55:47-05:00",
+					"landing_site": "/",
+					"note": null,
+					"note_attributes": [],
+					"referring_site": "",
+					"shipping_lines": [
+						{
+							"code": "Standard",
+							"price": "0.00",
+							"original_shop_price": "0.00",
+							"original_shop_markup": "0.00",
+							"source": "shopify",
+							"title": "Standard",
+							"presentment_title": "Standard",
+							"phone": null,
+							"tax_lines": [],
+							"custom_tax_lines": null,
+							"markup": "0.00",
+							"carrier_identifier": null,
+							"carrier_service_id": null,
+							"api_client_id": "580111",
+							"delivery_option_group": {
+								"token": "a564dd0d0ea45e41dee583d19ac49d3a",
+								"type": "one_time_purchase"
+							},
+							"delivery_expectation_range": null,
+							"delivery_expectation_type": null,
+							"id": null,
+							"requested_fulfillment_service_id": null,
+							"delivery_category": null,
+							"validation_context": null,
+							"applied_discounts": []
+						}
+					],
+					"shipping_address": {
+						"first_name": "Shahid",
+						"address1": null,
+						"phone": null,
+						"city": "Kozhikode",
+						"zip": "673027",
+						"province": "Kerala",
+						"country": "India",
+						"last_name": "K P",
+						"address2": null,
+						"company": null,
+						"latitude": null,
+						"longitude": null,
+						"name": "Shahid K P",
+						"country_code": "IN",
+						"province_code": "KL"
+					},
+					"taxes_included": false,
+					"total_weight": 0,
+					"currency": "INR",
+					"completed_at": null,
+					"phone": null,
+					"customer_locale": "en-IN",
+					"line_items": [
+						{
+							"key": "49472516194625",
+							"fulfillment_service": "manual",
+							"gift_card": false,
+							"grams": 0,
+							"presentment_title": "The Collection Snowboard: Liquid",
+							"presentment_variant_title": "",
+							"product_id": 9745331847489,
+							"quantity": 1,
+							"requires_shipping": true,
+							"sku": null,
+							"tax_lines": [
+								{
+									"position": 1,
+									"price": "134.99",
+									"rate": 0.18,
+									"title": "IGST",
+									"source": "Shopify",
+									"compare_at": null,
+									"zone": "province",
+									"channel_liable": false,
+									"identifier": null
+								}
+							],
+							"taxable": true,
+							"title": "The Collection Snowboard: Liquid",
+							"variant_id": 49472516194625,
+							"variant_title": "",
+							"variant_price": "749.95",
+							"vendor": "Hydrogen Vendor",
+							"unit_price_measurement": {
+								"measured_type": null,
+								"quantity_value": null,
+								"quantity_unit": null,
+								"reference_value": null,
+								"reference_unit": null
+							},
+							"compare_at_price": null,
+							"line_price": "749.95",
+							"price": "749.95",
+							"applied_discounts": [],
+							"destination_location_id": null,
+							"user_id": null,
+							"rank": null,
+							"origin_location_id": null,
+							"properties": {}
+						}
+					],
+					"name": "#43733336686913",
+					"abandoned_checkout_url": "https://flowflex-dev.myshopify.com/89924960577/checkouts/ac/Z2NwLXVzLWVhc3QxOjAxSkNDUkdIQ0tBS1k2WDJWOVZRM1dONU1I/recover?key=a1aeaf76655a87ac8012b924ac918ef1&locale=en-IN",
+					"discount_codes": [],
+					"tax_lines": [
+						{
+							"price": "134.99",
+							"rate": 0.18,
+							"title": "IGST"
+						}
+					],
+					"presentment_currency": "INR",
+					"source_name": "web",
+					"total_line_items_price": "749.95",
+					"total_tax": "134.99",
+					"total_discounts": "0.00",
+					"subtotal_price": "749.95",
+					"total_price": "884.94",
+					"total_duties": "0.00",
+					"device_id": null,
+					"user_id": null,
+					"location_id": null,
+					"source_identifier": null,
+					"source_url": null,
+					"source": null,
+					"closed_at": null,
+					"customer": {
+						"id": 8586210279745,
+						"email": "shahid@reviewbit.app",
+						"accepts_marketing": false,
+						"created_at": null,
+						"updated_at": null,
+						"first_name": "Shahid",
+						"last_name": "K P",
+						"orders_count": 0,
+						"state": "disabled",
+						"total_spent": "0.00",
+						"last_order_id": null,
+						"note": null,
+						"verified_email": true,
+						"multipass_identifier": null,
+						"tax_exempt": false,
+						"phone": null,
+						"tags": "",
+						"currency": "INR",
+						"accepts_marketing_updated_at": null,
+						"admin_graphql_api_id": "gid://shopify/Customer/8586210279745",
+						"default_address": {
+							"id": null,
+							"customer_id": 8586210279745,
+							"first_name": "Shahid",
+							"last_name": "K P",
+							"company": null,
+							"address1": "Nallalam",
+							"address2": null,
+							"city": "Kozhikode",
+							"province": "Kerala",
+							"country": "India",
+							"zip": "673027",
+							"phone": null,
+							"name": "Shahid K P",
+							"province_code": "KL",
+							"country_code": "IN",
+							"country_name": "India",
+							"default": true
+						},
+						"last_order_name": null,
+						"marketing_opt_in_level": null
+					}
+				},
+				"category": null
+			},
+			{
+				"topic": "shopify_draft_order_create",
+				"title": "Draft Order Created",
+				"description": "Workflow starts when a draft order is created",
+				"sample_payload": {
+					"id": 1447815840065,
+					"note": null,
+					"email": "gokul@reviewbit.app",
+					"taxes_included": false,
+					"currency": "INR",
+					"invoice_sent_at": null,
+					"created_at": "2024-11-05T22:40:43-05:00",
+					"updated_at": "2024-11-05T22:40:43-05:00",
+					"tax_exempt": false,
+					"completed_at": null,
+					"name": "#D23",
+					"status": "open",
+					"line_items": [
+						{
+							"id": 58652236546369,
+							"variant_id": 49472516096321,
+							"product_id": 9745331814721,
+							"title": "Selling Plans Ski Wax",
+							"variant_title": "Selling Plans Ski Wax",
+							"sku": "",
+							"vendor": "flowflex.dev",
+							"quantity": 1,
+							"requires_shipping": true,
+							"taxable": true,
+							"gift_card": false,
+							"fulfillment_service": "manual",
+							"grams": 57,
+							"tax_lines": [
+								{
+									"rate": 0.18,
+									"title": "IGST",
+									"price": "4.49"
+								}
+							],
+							"applied_discount": null,
+							"name": "Selling Plans Ski Wax - Selling Plans Ski Wax",
+							"properties": [],
+							"custom": false,
+							"price": "24.95",
+							"admin_graphql_api_id": "gid://shopify/DraftOrderLineItem/58652236546369"
+						}
+					],
+					"shipping_address": {
+						"first_name": "Gokul",
+						"address1": "UL CyberPark Ummalathoor",
+						"phone": "+918848870758",
+						"city": "Kozhikode",
+						"zip": "673016",
+						"province": "Kerala",
+						"country": "India",
+						"last_name": "Raj",
+						"address2": "",
+						"company": "Reviewbit",
+						"latitude": 11.255002,
+						"longitude": 75.828204,
+						"name": "Gokul Raj",
+						"country_code": "IN",
+						"province_code": "KL"
+					},
+					"billing_address": {
+						"first_name": "Gokul",
+						"address1": "UL CyberPark Ummalathoor",
+						"phone": "+918848870758",
+						"city": "Kozhikode",
+						"zip": "673016",
+						"province": "Kerala",
+						"country": "India",
+						"last_name": "Raj",
+						"address2": "",
+						"company": "Reviewbit",
+						"latitude": 11.255002,
+						"longitude": 75.828204,
+						"name": "Gokul Raj",
+						"country_code": "IN",
+						"province_code": "KL"
+					},
+					"invoice_url": "https://flowflex-dev.myshopify.com/89924960577/invoices/06442833522b9686ed074cb83e78b756",
+					"applied_discount": null,
+					"order_id": null,
+					"shipping_line": null,
+					"tax_lines": [
+						{
+							"rate": 0.18,
+							"title": "IGST",
+							"price": "4.49"
+						}
+					],
+					"tags": "",
+					"note_attributes": [],
+					"total_price": "29.44",
+					"subtotal_price": "24.95",
+					"total_tax": "4.49",
+					"payment_terms": null,
+					"admin_graphql_api_id": "gid://shopify/DraftOrder/1447815840065",
+					"customer": {
+						"id": 8373969224001,
+						"email": "gokul@reviewbit.app",
+						"created_at": "2024-10-09T04:55:50-04:00",
+						"updated_at": "2024-10-21T06:35:06-04:00",
+						"first_name": "Gokul",
+						"last_name": "Raj",
+						"orders_count": 4,
+						"state": "disabled",
+						"total_spent": "2654.82",
+						"last_order_id": 6096183198017,
+						"note": "",
+						"verified_email": true,
+						"multipass_identifier": null,
+						"tax_exempt": false,
+						"tags": "1, 2, newly addedone",
+						"last_order_name": "#1006",
+						"currency": "INR",
+						"phone": "+918848870758",
+						"tax_exemptions": [],
+						"email_marketing_consent": {
+							"state": "not_subscribed",
+							"opt_in_level": "single_opt_in",
+							"consent_updated_at": null
+						},
+						"sms_marketing_consent": {
+							"state": "not_subscribed",
+							"opt_in_level": "single_opt_in",
+							"consent_updated_at": null,
+							"consent_collected_from": "SHOPIFY"
+						},
+						"admin_graphql_api_id": "gid://shopify/Customer/8373969224001",
+						"default_address": {
+							"id": 10380879429953,
+							"customer_id": 8373969224001,
+							"first_name": "Gokul",
+							"last_name": "Raj",
+							"company": "Reviewbit",
+							"address1": "UL CyberPark Ummalathoor",
+							"address2": "",
+							"city": "Kozhikode",
+							"province": "Kerala",
+							"country": "India",
+							"zip": "673016",
+							"phone": "+918848870758",
+							"name": "Gokul Raj",
+							"province_code": "KL",
+							"country_code": "IN",
+							"country_name": "India",
+							"default": true
+						}
+					}
+				},
+				"category": null
+			},
+			{
+				"topic": "shopify_draft_order_update",
+				"title": "Draft Order Updated",
+				"description": "Workflow starts when a draft order is updated",
+				"sample_payload": {
+					"id": 1447815840065,
+					"note": null,
+					"email": "gokul@reviewbit.app",
+					"taxes_included": false,
+					"currency": "INR",
+					"invoice_sent_at": null,
+					"created_at": "2024-11-05T22:40:43-05:00",
+					"updated_at": "2024-11-05T22:49:00-05:00",
+					"tax_exempt": false,
+					"completed_at": null,
+					"name": "#D23",
+					"status": "open",
+					"line_items": [
+						{
+							"id": 58652237463873,
+							"variant_id": 49472516096321,
+							"product_id": 9745331814721,
+							"title": "Selling Plans Ski Wax",
+							"variant_title": "Selling Plans Ski Wax",
+							"sku": "",
+							"vendor": "flowflex.dev",
+							"quantity": 2,
+							"requires_shipping": true,
+							"taxable": true,
+							"gift_card": false,
+							"fulfillment_service": "manual",
+							"grams": 57,
+							"tax_lines": [
+								{
+									"rate": 0.18,
+									"title": "IGST",
+									"price": "8.98"
+								}
+							],
+							"applied_discount": null,
+							"name": "Selling Plans Ski Wax - Selling Plans Ski Wax",
+							"properties": [],
+							"custom": false,
+							"price": "24.95",
+							"admin_graphql_api_id": "gid://shopify/DraftOrderLineItem/58652237463873"
+						}
+					],
+					"shipping_address": {
+						"first_name": "Gokul",
+						"address1": "UL CyberPark Ummalathoor",
+						"phone": "+918848870758",
+						"city": "Kozhikode",
+						"zip": "673016",
+						"province": "Kerala",
+						"country": "India",
+						"last_name": "Raj",
+						"address2": "",
+						"company": "Reviewbit",
+						"latitude": null,
+						"longitude": null,
+						"name": "Gokul Raj",
+						"country_code": "IN",
+						"province_code": "KL"
+					},
+					"billing_address": {
+						"first_name": "Gokul",
+						"address1": "UL CyberPark Ummalathoor",
+						"phone": "+918848870758",
+						"city": "Kozhikode",
+						"zip": "673016",
+						"province": "Kerala",
+						"country": "India",
+						"last_name": "Raj",
+						"address2": "",
+						"company": "Reviewbit",
+						"latitude": null,
+						"longitude": null,
+						"name": "Gokul Raj",
+						"country_code": "IN",
+						"province_code": "KL"
+					},
+					"invoice_url": "https://flowflex-dev.myshopify.com/89924960577/invoices/06442833522b9686ed074cb83e78b756",
+					"applied_discount": null,
+					"order_id": null,
+					"shipping_line": null,
+					"tax_lines": [
+						{
+							"rate": 0.18,
+							"title": "IGST",
+							"price": "8.98"
+						}
+					],
+					"tags": "",
+					"note_attributes": [],
+					"total_price": "58.88",
+					"subtotal_price": "49.90",
+					"total_tax": "8.98",
+					"payment_terms": null,
+					"admin_graphql_api_id": "gid://shopify/DraftOrder/1447815840065",
+					"customer": {
+						"id": 8373969224001,
+						"email": "gokul@reviewbit.app",
+						"created_at": "2024-10-09T04:55:50-04:00",
+						"updated_at": "2024-10-21T06:35:06-04:00",
+						"first_name": "Gokul",
+						"last_name": "Raj",
+						"orders_count": 4,
+						"state": "disabled",
+						"total_spent": "2654.82",
+						"last_order_id": 6096183198017,
+						"note": "",
+						"verified_email": true,
+						"multipass_identifier": null,
+						"tax_exempt": false,
+						"tags": "1, 2, newly addedone",
+						"last_order_name": "#1006",
+						"currency": "INR",
+						"phone": "+918848870758",
+						"tax_exemptions": [],
+						"email_marketing_consent": {
+							"state": "not_subscribed",
+							"opt_in_level": "single_opt_in",
+							"consent_updated_at": null
+						},
+						"sms_marketing_consent": {
+							"state": "not_subscribed",
+							"opt_in_level": "single_opt_in",
+							"consent_updated_at": null,
+							"consent_collected_from": "SHOPIFY"
+						},
+						"admin_graphql_api_id": "gid://shopify/Customer/8373969224001",
+						"default_address": {
+							"id": 10380879429953,
+							"customer_id": 8373969224001,
+							"first_name": "Gokul",
+							"last_name": "Raj",
+							"company": "Reviewbit",
+							"address1": "UL CyberPark Ummalathoor",
+							"address2": "",
+							"city": "Kozhikode",
+							"province": "Kerala",
+							"country": "India",
+							"zip": "673016",
+							"phone": "+918848870758",
+							"name": "Gokul Raj",
+							"province_code": "KL",
+							"country_code": "IN",
+							"country_name": "India",
+							"default": true
+						}
+					}
+				},
+				"category": null
+			},
+			{
+				"topic": "shopify_draft_order_delete",
+				"title": "Draft Order Deleted",
+				"description": "Workflow starts when a draft order is deleted",
+				"sample_payload": {
+					"id": 1447739326785
+				},
+				"category": null
+			}
+		]
+	},
+	{
+		"type": "whatsapp",
+		"title": "Message",
+		"description": "Integrate messaging service with Flowflex Flows using the GraphQL-based API.",
+		"events": [
+			{
+				"topic": "whatsapp_inbound",
+				"title": "WhatsApp Incomming Chat",
+				"description": "Workflow starts when a new chat is created",
+				"sample_payload": {
+					"messaging_product": "whatsapp",
+					"metadata": {
+						"display_phone_number": "15557513794",
+						"phone_number_id": "656113887585175"
+					},
+					"contacts": [
+						{
+							"profile": {
+								"name": "Gokul Raj"
+							},
+							"wa_id": "918848870758"
+						}
+					],
+					"messages": [
+						{
+							"from": "918848870758",
+							"id": "wamid.HBgMOTE4ODQ4ODcwNzU4FQIAEhgUM0EyQzdFOTUzRjQ2RTNFNjdFRjAA",
+							"timestamp": "1749552897",
+							"text": {
+								"body": "Test"
+							},
+							"type": "text"
+						}
+					]
+				},
+				"category": null
+			}
+		]
+	},
+	{
+		"type": "app_zoom",
+		"title": "Zoom",
+		"description": "Integrate Zoom with flowflex ",
+		"events": [
+			{
+				"topic": "zoom_scheduled_event_created",
+				"title": "Scheduled event created",
+				"description": "Workflow starts when a new scheduled event is created",
+				"sample_payload": {
+					"event": "scheduler.scheduled_event_created",
+					"payload": {
+						"account_id": "VrzfB_sVQsiO44dVQKNCVg",
+						"object": {
+							"created": "2025-04-04T04:32:56.613Z",
+							"invitee_email": "john@gmail.com",
+							"invitee_first_name": "john",
+							"invitee_last_name": "doe",
+							"manage_url": "https://scheduler.zoom.us/manage/636vj89me92ruenvrx5hinbk10",
+							"questions_and_answers": [
+								{
+									"answer": ["+91 7994959712"],
+									"position": 0,
+									"question": "Phone Number"
+								}
+							],
+							"rescheduled": false,
+							"scheduled_event": {
+								"attendees": [
+									{
+										"display_name": "Gokul Raj",
+										"email": "gokul@reviewbit.app"
+									}
+								],
+								"created": "2025-04-04T04:32:56.313Z",
+								"end_date_time": "2025-04-07T16:30:00Z",
+								"event_id": "zpxqooc7f24i3bp2tevx5sdza0",
+								"external_location": {
+									"kind": "zoom",
+									"meeting_description": "Gokul Raj is inviting you to a scheduled Zoom meeting.\r\nJoin Zoom Meeting\r\nhttps://us06web.zoom.us/j/86954994149?pwd=VmISZ0x3lk0Dj3auT2wub1zUWaXbdE.1\r\n\r\nMeeting ID: 869 5499 4149\r\nPasscode: PUkem3\r\n\r\n---\r\n\r\nOne tap mobile\r\n+13052241968,,86954994149#,,,,*013041# US\r\n+13092053325,,86954994149#,,,,*013041# US\r\n\r\n---\r\n\r\nDial by your location\r\n• +1 305 224 1968 US\r\n• +1 309 205 3325 US\r\n• +1 312 626 6799 US (Chicago)\r\n• +1 646 558 8656 US (New York)\r\n• +1 646 931 3860 US\r\n• +1 301 715 8592 US (Washington DC)\r\n• +1 720 707 2699 US (Denver)\r\n• +1 253 205 0468 US\r\n• +1 253 215 8782 US (Tacoma)\r\n• +1 346 248 7799 US (Houston)\r\n• +1 360 209 5623 US\r\n• +1 386 347 5053 US\r\n• +1 507 473 4847 US\r\n• +1 564 217 2000 US\r\n• +1 669 444 9171 US\r\n• +1 689 278 1000 US\r\n• +1 719 359 4580 US\r\n\r\nMeeting ID: 869 5499 4149\r\nPasscode: 013041\r\n\r\nFind your local number: https://us06web.zoom.us/u/kpNDNNh4E\r\n\r\n",
+									"meeting_id": "86954994149",
+									"meeting_join_url": "https://us06web.zoom.us/j/86954994149?pwd=VmISZ0x3lk0Dj3auT2wub1zUWaXbdE.1",
+									"meeting_passcode": "PUkem3",
+									"personal_meeting_id": ""
+								},
+								"guests": [],
+								"invitee_counters": {
+									"active": 1,
+									"limit": 1,
+									"total": 1
+								},
+								"location": {
+									"location_type": "zoom",
+									"zoom_join_url": "https://us06web.zoom.us/j/86954994149?pwd=VmISZ0x3lk0Dj3auT2wub1zUWaXbdE.1",
+									"zoom_meeting_data": {
+										"zoom_meeting_id": "86954994149",
+										"zoom_meeting_passcode": "PUkem3"
+									},
+									"zoom_meeting_status": "scheduled"
+								},
+								"meeting_notes": "",
+								"start_date_time": "2025-04-07T16:00:00.000Z",
+								"status": "confirmed",
+								"summary": "Test",
+								"updated": "2025-04-04T04:32:56.313Z"
+							},
+							"text_phone_number": "",
+							"time_zone": "America/Los_Angeles",
+							"tracking": {}
+						},
+						"user_id": "Q4KxKg6VT02yqeF-ddKaTg"
+					},
+					"event_ts": 1743741176610
+				},
+				"category": null
+			},
+			{
+				"topic": "zoom_scheduled_event_canceled",
+				"title": "Scheduled event canceled",
+				"description": "Workflow starts when a scheduled event is canceled",
+				"sample_payload": {
+					"event": "scheduler.scheduled_event_canceled",
+					"payload": {
+						"account_id": "VrzfB_sVQsiO44dVQKNCVg",
+						"object": {
+							"cancellation": {
+								"cancel_at": "2025-04-03T08:30:01.768Z",
+								"canceled_by": "mishab@gmail.com",
+								"canceler_type": "invitee",
+								"reason": ""
+							},
+							"created": "2025-04-03T08:30:02.545Z",
+							"invitee_email": "mishab@gmail.com",
+							"invitee_first_name": "Mishab",
+							"invitee_last_name": "to",
+							"manage_url": "https://scheduler.zoom.us/manage/6sxiyi5a0uefc6u4296kbrfi30",
+							"questions_and_answers": [],
+							"rescheduled": true,
+							"scheduled_event": {
+								"attendees": [
+									{
+										"display_name": "Gokul Raj",
+										"email": "gokul@reviewbit.app"
+									}
+								],
+								"created": "2025-04-03T07:13:51.791Z",
+								"end_date_time": "2025-04-03T09:30:00Z",
+								"event_id": "9kch2cdxgta1j4sgrf68yx9190",
+								"external_location": {
+									"kind": "zoom",
+									"meeting_description": "Gokul Raj is inviting you to a scheduled Zoom meeting.\r\nJoin Zoom Meeting\r\nhttps://us06web.zoom.us/j/81558005774?pwd=K5qWBNiB6RoNJglblmKwdRSy5ZU4C3.1\r\n\r\nMeeting ID: 815 5800 5774\r\nPasscode: t7zAw8\r\n\r\n---\r\n\r\nOne tap mobile\r\n+16465588656,,81558005774#,,,,*736283# US (New York)\r\n+16469313860,,81558005774#,,,,*736283# US\r\n\r\n---\r\n\r\nDial by your location\r\n• +1 646 558 8656 US (New York)\r\n• +1 646 931 3860 US\r\n• +1 301 715 8592 US (Washington DC)\r\n• +1 305 224 1968 US\r\n• +1 309 205 3325 US\r\n• +1 312 626 6799 US (Chicago)\r\n• +1 689 278 1000 US\r\n• +1 719 359 4580 US\r\n• +1 720 707 2699 US (Denver)\r\n• +1 253 205 0468 US\r\n• +1 253 215 8782 US (Tacoma)\r\n• +1 346 248 7799 US (Houston)\r\n• +1 360 209 5623 US\r\n• +1 386 347 5053 US\r\n• +1 507 473 4847 US\r\n• +1 564 217 2000 US\r\n• +1 669 444 9171 US\r\n\r\nMeeting ID: 815 5800 5774\r\nPasscode: 736283\r\n\r\nFind your local number: https://us06web.zoom.us/u/kcCrINOYrb\r\n\r\n",
+									"meeting_id": "81558005774",
+									"meeting_join_url": "https://us06web.zoom.us/j/81558005774?pwd=K5qWBNiB6RoNJglblmKwdRSy5ZU4C3.1",
+									"meeting_passcode": "t7zAw8",
+									"personal_meeting_id": ""
+								},
+								"guests": [],
+								"invitee_counters": {
+									"active": 1,
+									"limit": 1,
+									"total": 1
+								},
+								"location": {
+									"location_type": "zoom",
+									"zoom_join_url": "https://us06web.zoom.us/j/81558005774?pwd=K5qWBNiB6RoNJglblmKwdRSy5ZU4C3.1",
+									"zoom_meeting_data": {
+										"zoom_meeting_id": "81558005774",
+										"zoom_meeting_passcode": "t7zAw8"
+									},
+									"zoom_meeting_status": "scheduled"
+								},
+								"meeting_notes": "",
+								"start_date_time": "2025-04-03T09:00:00.000Z",
+								"status": "confirmed",
+								"summary": "👋 Hello, I am an event card",
+								"updated": "2025-04-03T07:13:51.791Z"
+							},
+							"text_phone_number": "",
+							"time_zone": "Asia/Kolkata",
+							"tracking": {}
+						},
+						"user_id": "Q4KxKg6VT02yqeF-ddKaTg"
+					},
+					"event_ts": 1743669002542
+				},
+				"category": null
+			},
+			{
+				"topic": "zoom_meeting_created",
+				"title": "Meeting created",
+				"description": "Workflow starts when a new meeting is created",
+				"sample_payload": {
+					"event": "meeting.created",
+					"payload": {
+						"account_id": "VrzfB_sVQsiO44dVQKNCVg",
+						"operator": "gokul@reviewbit.app",
+						"operator_id": "Q4KxKg6VT02yqeF-ddKaTg",
+						"object": {
+							"uuid": "+QClNmYSR+K0+gPevJnTOg==",
+							"id": 81558005774,
+							"host_id": "Q4KxKg6VT02yqeF-ddKaTg",
+							"topic": "👋 Hello, I am an event card (Mishab to)",
+							"type": 2,
+							"start_time": "2025-04-03T09:00:00Z",
+							"duration": 30,
+							"timezone": "Asia/Kolkata",
+							"join_url": "https://us06web.zoom.us/j/81558005774?pwd=K5qWBNiB6RoNJglblmKwdRSy5ZU4C3.1",
+							"password": "t7zAw8",
+							"settings": {
+								"join_before_host": false,
+								"jbh_time": 0,
+								"use_pmi": false,
+								"alternative_hosts": "",
+								"meeting_invitees": [
+									{
+										"email": "gokul@reviewbit.app"
+									},
+									{
+										"email": "mishab@gmail.com"
+									}
+								]
+							},
+							"creation_source": "other"
+						}
+					},
+					"event_ts": 1743664434744
+				},
+				"category": null
+			},
+			{
+				"topic": "zoom_meeting_updated",
+				"title": "Meeting updated",
+				"description": "Workflow starts when a meeting is updated",
+				"sample_payload": {
+					"event": "meeting.updated",
+					"payload": {
+						"account_id": "VrzfB_sVQsiO44dVQKNCVg",
+						"operator": "gokul@reviewbit.app",
+						"operator_id": "Q4KxKg6VT02yqeF-ddKaTg",
+						"object": {
+							"uuid": "+QClNmYSR+K0+gPevJnTOg==",
+							"id": 81558005774,
+							"start_time": "2025-04-03T10:30:00Z",
+							"settings": {
+								"meeting_invitees": [
+									{
+										"email": "gokul@reviewbit.app"
+									},
+									{
+										"email": "mishab@gmail.com"
+									}
+								]
+							}
+						},
+						"old_object": {
+							"uuid": "+QClNmYSR+K0+gPevJnTOg==",
+							"id": 81558005774,
+							"start_time": "2025-04-03T09:00:00Z",
+							"settings": {
+								"meeting_invitees": [
+									{
+										"email": "mishab@gmail.com"
+									},
+									{
+										"email": "gokul@reviewbit.app"
+									}
+								]
+							}
+						},
+						"time_stamp": 1743669002197
+					},
+					"event_ts": 1743669002197
+				},
+				"category": null
+			},
+			{
+				"topic": "zoom_user_invitation_accepted",
+				"title": "User invitation accepted",
+				"description": "Workflow starts when a user accepts an invitation",
+				"sample_payload": {
+					"event": "user.invitation_accepted",
+					"payload": {
+						"account_id": "VrzfB_sVQsiO44dVQKNCVg",
+						"object": {
+							"id": "AjnmAWEtRUuCKShNZjOQPw",
+							"email": "lakshmi@reviewbit.app",
+							"type": 1
+						}
+					},
+					"event_ts": 1743673471712
+				},
+				"category": null
+			}
+		]
+	},
+	{
+		"type": "app_leadsquared",
+		"title": "Leadsquared",
+		"description": "Integrate leadsquared with flowflex ",
+		"events": [
+			{
+				"topic": "leadsquared_task_create",
+				"title": "Task Created",
+				"description": "Workflow starts when a new task is created",
+				"sample_payload": {
+					"Data": {
+						"LeadId": "567c3c2e-9065-4857-9a07-f075b176cccc",
+						"TaskId": "6b45b7d7-0f7b-11f0-b09f-06552295b277",
+						"OwnerId": "39123ceb-eb64-11ef-bbcb-06552295b277",
+						"Latitude": "0.00000000",
+						"Location": "",
+						"Priority": "",
+						"TaskName": "Inbound Follow Up: Thomas Selvakumar ",
+						"TaskType": "5a5a73b9-e91f-11ef-bbcb-06552295b277",
+						"CreatedBy": "39123ceb-eb64-11ef-bbcb-06552295b277",
+						"CreatedOn": "2025-04-02 04:32:00",
+						"Longitude": "0.00000000",
+						"ReminderTime": "",
+						"CreatedByEmail": "nafila@elancelearning.com",
+						"DueDateUTCTime": "2025-04-02 04:33:00",
+						"EffortEstimate": "",
+						"EndDateUTCTime": "2025-04-02 05:03:00",
+						"RelatedEntityId": "567c3c2e-9065-4857-9a07-f075b176cccc",
+						"TaskDescription": "Inbound Follow Up: Thomas Selvakumar ",
+						"DueDateLocalTime": "2025-04-02 10:03:00",
+						"EndDateLocalTime": "2025-04-02 10:33:00",
+						"PercentCompleted": "0",
+						"RelatedEntityType": "Lead",
+						"ReminderInMinutes": "15",
+						"EffortEstimateUnit": "",
+						"ReminderBeforeDays": "",
+						"TaskTypeConfiguration": {
+							"Id": "5a5a73b9-e91f-11ef-bbcb-06552295b277",
+							"Name": "Inbound Follow Up",
+							"TaskTypeConfiguration": {
+								"CalenderInvite": {
+									"Organiser": {
+										"IsEnabled": false,
+										"TemplateContent": null,
+										"Subject": null,
+										"IsSent": false
+									},
+									"Owner": {
+										"IsEnabled": false,
+										"TemplateContent": null,
+										"Subject": null,
+										"IsSent": false
+									},
+									"Lead": {
+										"IsEnabled": false,
+										"TemplateContent": null,
+										"Subject": null,
+										"IsSent": false
+									},
+									"ParticipantUsers": {
+										"IsEnabled": false,
+										"TemplateContent": null,
+										"Subject": null,
+										"IsSent": null
+									}
+								},
+								"Location": {
+									"IsEnabled": false,
+									"IsMandatory": false,
+									"LocationValue": "",
+									"GeofenceLocation": false,
+									"GeofenceRange": 100
+								},
+								"BusinessWorkFlow": {
+									"IsEnabled": false,
+									"Status": {
+										"Label": "",
+										"Values": []
+									}
+								},
+								"Duration": {
+									"IsEnabled": false,
+									"Value": "30",
+									"Values": null
+								},
+								"Priority": {
+									"IsEnabled": false,
+									"Value": null,
+									"Values": null
+								},
+								"TaskCompleted": {
+									"IsEnabled": false
+								},
+								"EffortEstimate": {
+									"IsEnabled": false,
+									"Value": null,
+									"ValueUnit": null,
+									"Values": null
+								}
+							},
+							"PreventConflict": false,
+							"Sequence": 0,
+							"IsDefault": false,
+							"IsEditable": false,
+							"IsDeleteable": false,
+							"IsTimerEnabled": false,
+							"Status": 0,
+							"CreatedBy": null,
+							"CreatedOn": "0001-01-01T00:00:00",
+							"ModifiedBy": null,
+							"ModifiedByEmail": null,
+							"ModifiedOn": "0001-01-01T00:00:00",
+							"ShowOrganiserCalendarInvite": null,
+							"ShowOwnerCalendarInvite": null,
+							"ShowLeadCalendarInvite": null,
+							"ShowParticipantCalendarInvite": null,
+							"ReminderConfiguration": {
+								"IsEnable": true
+							},
+							"ColumnConfiguration": [],
+							"FormLayout": null,
+							"Color": null,
+							"Category": 0,
+							"OpenCompletedTasks": false
+						}
+					},
+					"Event": "Task_Creation"
+				},
+				"category": null
+			},
+			{
+				"topic": "leadsquared_task_reminder",
+				"title": "Task Reminder",
+				"description": "Workflow starts when a task reminder is triggered",
+				"sample_payload": {
+					"Event": "Task_ReminderSent",
+					"Data": {
+						"TaskId": "be7cdcdf-0f7b-11f0-b09f-06552295b277",
+						"TaskName": "Lead Follow Up Task: Shahala ",
+						"TaskType": {
+							"Id": "00f115f3-f8a0-11ed-85f2-028a08a8be96",
+							"Name": "Lead Follow Up Task",
+							"TaskTypeConfiguration": {
+								"CalenderInvite": {
+									"Organiser": {
+										"IsEnabled": false,
+										"TemplateContent": null,
+										"Subject": null,
+										"IsSent": false
+									},
+									"Owner": {
+										"IsEnabled": true,
+										"TemplateContent": null,
+										"Subject": null,
+										"IsSent": true
+									},
+									"Lead": {
+										"IsEnabled": false,
+										"TemplateContent": null,
+										"Subject": null,
+										"IsSent": false
+									},
+									"ParticipantUsers": {
+										"IsEnabled": false,
+										"TemplateContent": null,
+										"Subject": null,
+										"IsSent": null
+									}
+								},
+								"Location": {
+									"IsEnabled": false,
+									"IsMandatory": false,
+									"LocationValue": "",
+									"GeofenceLocation": false,
+									"GeofenceRange": 100
+								},
+								"BusinessWorkFlow": {
+									"IsEnabled": false,
+									"Status": {
+										"Label": "",
+										"Values": []
+									}
+								},
+								"Duration": {
+									"IsEnabled": false,
+									"Value": "480",
+									"Values": null
+								},
+								"Priority": {
+									"IsEnabled": false,
+									"Value": null,
+									"Values": null
+								},
+								"TaskCompleted": {
+									"IsEnabled": false
+								},
+								"EffortEstimate": {
+									"IsEnabled": false,
+									"Value": null,
+									"ValueUnit": null,
+									"Values": null
+								}
+							},
+							"PreventConflict": false,
+							"Sequence": 0,
+							"IsDefault": false,
+							"IsEditable": false,
+							"IsDeleteable": false,
+							"IsTimerEnabled": false,
+							"Status": 0,
+							"CreatedBy": null,
+							"CreatedOn": "0001-01-01T00:00:00",
+							"ModifiedBy": null,
+							"ModifiedByEmail": null,
+							"ModifiedOn": "0001-01-01T00:00:00",
+							"ShowOrganiserCalendarInvite": null,
+							"ShowOwnerCalendarInvite": null,
+							"ShowLeadCalendarInvite": null,
+							"ShowParticipantCalendarInvite": null,
+							"ReminderConfiguration": {
+								"IsEnable": true
+							},
+							"ColumnConfiguration": [],
+							"FormLayout": null,
+							"Color": null,
+							"Category": 0,
+							"OpenCompletedTasks": false
+						},
+						"TaskDescription": "Lead Follow Up Task: Shahala ",
+						"LeadId": "80f1ad4e-2e4b-41a3-85c6-c82be68f7798",
+						"RelatedEntityId": "80f1ad4e-2e4b-41a3-85c6-c82be68f7798",
+						"RelatedEntityType": "Lead",
+						"RelatedOpportunityId": "[{MXVAR_TaskAssociatedOpportunityId}]",
+						"RelatedOpportunityType": "[{MXVAR_TaskAssociatedOpportunityType}]",
+						"DueDateUTCTime": "2025-04-02 04:35:20",
+						"DueDateLocalTime": "2025-04-02 10:05:20",
+						"ReminderInMinutes": "15",
+						"ReminderBeforeDays": "",
+						"ReminderTimeUTC": "",
+						"OwnerId": "48bc35fd-0489-11f0-b09f-06552295b277",
+						"EndDateUTCTime": "2025-04-02 12:35:19",
+						"EndDateLocalTime": "2025-04-02 18:05:19",
+						"EffortEstimate": "",
+						"EffortEstimateUnit": "",
+						"Location": "",
+						"PercentCompleted": "0",
+						"Priority": "",
+						"mx_Custom_1": "",
+						"mx_Custom_2": "",
+						"mx_Custom_3": "",
+						"mx_Custom_4": "",
+						"mx_Custom_5": "",
+						"mx_Custom_6": "",
+						"mx_Custom_7": "",
+						"mx_Custom_8": "",
+						"mx_Custom_9": "",
+						"mx_Custom_10": "",
+						"mx_Custom_11": "",
+						"mx_Custom_12": "",
+						"mx_Custom_13": "",
+						"mx_Custom_14": "",
+						"mx_Custom_15": "",
+						"mx_Custom_16": "",
+						"mx_Custom_17": "",
+						"mx_Custom_18": "",
+						"mx_Custom_19": "",
+						"mx_Custom_20": ""
+					}
+				},
+				"category": null
+			},
+			{
+				"topic": "leadsquared_lead_post_create",
+				"title": "Lead Created",
+				"description": "Workflow starts when a new lead is created",
+				"sample_payload": {
+					"ProspectID": "0c4bd29c-af55-4a16-9523-b8c01439992b",
+					"ProspectAutoId": "23666",
+					"FirstName": "Litty",
+					"LastName": null,
+					"EmailAddress": null,
+					"Origin": "F4",
+					"Phone": "+91-7736510546",
+					"Mobile": null,
+					"Source": "Elite Refferal Form",
+					"SourceMedium": null,
+					"SourceCampaign": null,
+					"DoNotEmail": "0",
+					"DoNotCall": "0",
+					"ProspectStage": "New Lead",
+					"Score": "0",
+					"EngagementScore": "0",
+					"ProspectActivityName_Max": null,
+					"ProspectActivityDate_Max": null,
+					"FirstLandingPageSubmissionDate": null,
+					"OwnerId": "48bc35fd-0489-11f0-b09f-06552295b277",
+					"CreatedBy": "48bc35fd-0489-11f0-b09f-06552295b277",
+					"CreatedOn": "2025-04-02 04:31:31",
+					"ModifiedBy": "48bc35fd-0489-11f0-b09f-06552295b277",
+					"ModifiedOn": "2025-04-02 04:31:31",
+					"LeadConversionDate": "2025-04-02 04:31:32",
+					"StatusCode": "0",
+					"StatusReason": "0",
+					"IsLead": "1",
+					"LastModifiedOn": "2025-04-02 04:31:32",
+					"mx_Course": "CMA",
+					"mx_Academic_Year_New": "2025",
+					"NotableEvent": "Created",
+					"NotableEventdate": "2025-04-02 04:31:31",
+					"SourceReferrer": "",
+					"LastVisitDate": null,
+					"QualityScore01": null,
+					"ConversionReferrerURL": null,
+					"SourceIPAddress": null,
+					"SourceReferrerURL": null,
+					"LeadLastModifiedOn": "2025-04-02 04:31:32",
+					"OwnerIdName": "Jishnu VT",
+					"OwnerIdEmailAddress": "jishnuvt@elancelearning.com",
+					"CreatedByName": "Jishnu VT",
+					"ModifiedByName": "Jishnu VT",
+					"Account_CompanyName": "Elance Learning Provider Private Limited",
+					"Account_ShortName": "t20241216170942",
+					"Account_TimeZone": "Asia/Kolkata",
+					"Account_Website": "gmail.com",
+					"Account_Street1": "2nd Floor, Metro Magna Building, Mavoor Rd, Parayancheri, Puthiyara, Kozhikode, Kerala 673016",
+					"Account_Street2": "Primero Plaza, A K Seshadri Rd, near Maharajas College Ground, Shenoys, Kochi, Ernakulam, Kerala 682011",
+					"Account_City": "Kozikode",
+					"Account_State": "Kerela",
+					"Account_Country": "India",
+					"Owner_FirstName": "Jishnu VT",
+					"Owner_EmailAddress": "jishnuvt@elancelearning.com",
+					"Owner_FullName": "Jishnu VT",
+					"Owner_TimeZone": "Asia/Kolkata",
+					"Owner_AssociatedPhoneNumbers": "+91-8891395777",
+					"Org_ShortCode": "76676",
+					"Account_Address": "Elance Learning Provider Private Limited{mxnewline}2nd Floor, Metro Magna Building, Mavoor Rd, Parayancheri, Puthiyara, Kozhikode, Kerala 673016,Primero Plaza, A K Seshadri Rd, near Maharajas College Ground, Shenoys, Kochi, Ernakulam, Kerala 682011{mxnewline},Kozikode,Kerela{mxnewline} {mxnewline}India.",
+					"CreatedByEmail": "jishnuvt@elancelearning.com",
+					"ModifiedByEmail": "jishnuvt@elancelearning.com",
+					"CanUpdate": "true"
+				},
+				"category": null
+			},
+			{
+				"topic": "leadsquared_lead_owner_change",
+				"title": "Lead Owner Changed",
+				"description": "Workflow starts when a lead owner is changed",
+				"sample_payload": {
+					"Before": {
+						"ProspectID": "b90f9cb7-46fd-4ea8-abc0-75e3b618521e",
+						"ProspectAutoId": "23565",
+						"FirstName": "Abel Thomas",
+						"LastName": null,
+						"EmailAddress": "abelthomas2025@gmail.com",
+						"Phone": "+91-7012573359",
+						"Mobile": null,
+						"Source": "FB Lead Ads",
+						"SourceMedium": "28797817003200079",
+						"SourceCampaign": "ACCA Video - Malavika | December",
+						"ProspectStage": "Qualified",
+						"Score": "6",
+						"EngagementScore": "0",
+						"ProspectActivityName_Max": "Dynamic Form Submission",
+						"ProspectActivityDate_Max": "2025-04-02 04:30:13",
+						"OwnerId": "028d3ba2-eb64-11ef-bbcb-06552295b277",
+						"ModifiedBy": "a5e85c77-bbd0-11ef-930a-068d5214268d",
+						"ModifiedOn": "2025-04-02 04:30:19",
+						"LastModifiedOn": "2025-04-02 04:30:19",
+						"NotableEventdate": "2025-04-02 04:30:19",
+						"QualityScore01": null,
+						"ConversionReferrerURL": null,
+						"SourceIPAddress": null,
+						"SourceReferrerURL": null,
+						"LeadLastModifiedOn": "2025-04-02 04:30:19",
+						"OwnerIdName": "ANNA PHILIP",
+						"OwnerIdEmailAddress": "anna@elancelearning.com",
+						"ModifiedByName": "System",
+						"Owner_FirstName": "ANNA",
+						"Owner_LastName": "PHILIP",
+						"Owner_EmailAddress": "anna@elancelearning.com",
+						"Owner_FullName": "ANNA PHILIP",
+						"Owner_AssociatedPhoneNumbers": "+91-9746234777",
+						"ModifiedByEmail": "t20241216170942@leadsquared.com"
+					},
+					"After": {
+						"ProspectID": "b90f9cb7-46fd-4ea8-abc0-75e3b618521e",
+						"ProspectAutoId": "23565",
+						"FirstName": "Abel Thomas",
+						"LastName": null,
+						"EmailAddress": "abelthomas2025@gmail.com",
+						"Phone": "+91-7012573359",
+						"Mobile": null,
+						"Source": "FB Lead Ads",
+						"SourceMedium": "28797817003200079",
+						"SourceCampaign": "ACCA Video - Malavika | December",
+						"ProspectStage": "Qualified",
+						"Score": "6",
+						"EngagementScore": "0",
+						"ProspectActivityName_Max": "Dynamic Form Submission",
+						"ProspectActivityDate_Max": "2025-04-02 04:30:13",
+						"OwnerId": "617022a0-c381-11ef-9807-06552295b277",
+						"ModifiedBy": "028d3ba2-eb64-11ef-bbcb-06552295b277",
+						"ModifiedOn": "2025-04-02 04:31:17",
+						"LastModifiedOn": "2025-04-02 04:31:17",
+						"NotableEventdate": "2025-04-02 04:31:17",
+						"QualityScore01": null,
+						"ConversionReferrerURL": null,
+						"SourceIPAddress": null,
+						"SourceReferrerURL": null,
+						"LeadLastModifiedOn": "2025-04-02 04:31:17",
+						"OwnerIdName": "FATHIMA FAIROOZ",
+						"OwnerIdEmailAddress": "fathima@elancelearning.com",
+						"ModifiedByName": "ANNA PHILIP",
+						"Owner_FirstName": "FATHIMA",
+						"Owner_LastName": "FAIROOZ",
+						"Owner_EmailAddress": "fathima@elancelearning.com",
+						"Owner_FullName": "FATHIMA FAIROOZ",
+						"Owner_AssociatedPhoneNumbers": "+91-9778612912",
+						"ModifiedByEmail": "anna@elancelearning.com"
+					}
+				},
+				"category": null
+			},
+			{
+				"topic": "leadsquared_lead_stage_change",
+				"title": "Lead Stage Changed",
+				"description": "Workflow starts when a lead stage is changed",
+				"sample_payload": {
+					"Before": {
+						"ProspectID": "abf4baac-1511-4205-9389-8e02838d8e31",
+						"ProspectAutoId": "26767",
+						"FirstName": "Mishab - Testing",
+						"LastName": null,
+						"EmailAddress": null,
+						"Phone": "+91-8304053580",
+						"Mobile": "+91-8304053580",
+						"Source": "Whatsapp Inbound",
+						"SourceMedium": null,
+						"SourceCampaign": null,
+						"ProspectStage": "New Lead",
+						"Score": "0",
+						"EngagementScore": "0",
+						"ProspectActivityName_Max": null,
+						"ProspectActivityDate_Max": null,
+						"OwnerId": "98ab8591-0c6c-11f0-b09f-06552295b277",
+						"ModifiedOn": "2025-04-12 14:20:21",
+						"LastModifiedOn": "2025-04-12 14:20:21",
+						"NotableEvent": "Created",
+						"NotableEventdate": "2025-04-12 14:20:21",
+						"mx_State": "Kerala",
+						"QualityScore01": null,
+						"ConversionReferrerURL": null,
+						"SourceIPAddress": null,
+						"SourceReferrerURL": null,
+						"LeadLastModifiedOn": "2025-04-12 14:20:21",
+						"OwnerIdEmailAddress": "shakp2003@gmail.com"
+					},
+					"After": {
+						"ProspectID": "abf4baac-1511-4205-9389-8e02838d8e31",
+						"ProspectAutoId": "26767",
+						"FirstName": "Mishab - Testing",
+						"LastName": null,
+						"EmailAddress": null,
+						"Phone": "+91-8304053580",
+						"Mobile": "+91-8304053580",
+						"Source": "Whatsapp Inbound",
+						"SourceMedium": null,
+						"SourceCampaign": null,
+						"ProspectStage": "Call Back",
+						"Score": "0",
+						"EngagementScore": "0",
+						"ProspectActivityName_Max": null,
+						"ProspectActivityDate_Max": null,
+						"OwnerId": "98ab8591-0c6c-11f0-b09f-06552295b277",
+						"ModifiedOn": "2025-04-12 14:21:45",
+						"LastModifiedOn": "2025-04-12 14:21:45",
+						"NotableEvent": "Modified",
+						"NotableEventdate": "2025-04-12 14:21:45",
+						"mx_State": null,
+						"QualityScore01": null,
+						"ConversionReferrerURL": null,
+						"SourceIPAddress": null,
+						"SourceReferrerURL": null,
+						"LeadLastModifiedOn": "2025-04-12 14:21:45",
+						"OwnerIdEmailAddress": "shakp2003@gmail.com"
+					}
+				},
+				"category": null
+			},
+			{
+				"topic": "leadsquared_lead_activity_create_razorpay",
+				"title": "Lead Activity Created Razorpay",
+				"description": "Workflow starts when a lead activity is created for Razorpay link",
+				"sample_payload": {
+					"ProspectActivityId": "a5c5aa91-a6f3-40f4-a686-02191fb87a04",
+					"RelatedProspectId": "e2923822-6244-4254-8ea0-ae8b6146390f",
+					"ActivityEvent": "231",
+					"ActivityEventName": "Razorpay Payment Link",
+					"ActivityType": "2",
+					"CreatedBy": "a5e85c77-bbd0-11ef-930a-068d5214268d",
+					"CreatedOn": "2025-05-29 14:45:32",
+					"Score": 5,
+					"Data": {
+						"Status": "Active",
+						"Owner": "",
+						"mx_Custom_2": "plink_QamZ78CQiAxLtb",
+						"Note": "https://rzp.io/rzp/k05Avma",
+						"mx_Custom_3": "",
+						"ActivityEvent_Note": "https://rzp.io/rzp/k05Avma",
+						"mx_Custom_1": ""
+					},
+					"RelatedOpportunityEvent": "12000",
+					"RelatedOpportunityId": "91864db1-5107-4cf9-aeff-e8008edcbad9"
+				},
+				"category": null
+			}
+		]
+	},
+	{
+		"_id": "683fe7955caa8d421b37afbc",
+		"type": "app_zoho",
+		"title": "Zoho",
+		"description": "Integrate zoho with flowflex ",
+		"events": [
+			{
+				"topic": "zoho_patient_create",
+				"title": "Patient Created",
+				"description": "Workflow starts when a new patient is created",
+				"sample_payload": {
+					"Patient": {
+						"PatientId": "6835000000254299",
+						"PatientOwnerId": "6835000000089003",
+						"PatientID": "0406258",
+						"PatientOwner": "Mishab O",
+						"Email": "lsk@gmail.com",
+						"SecondaryEmail": "",
+						"CreatedBy": "Mishab O",
+						"ModifiedBy": "Mishab O",
+						"CreatedTime": "04-06-2025 13:17:27",
+						"ModifiedTime": "04-06-2025 13:17:27",
+						"LastActivityTime": "",
+						"Currency": "INR",
+						"ExchangeRate": "1",
+						"EmailOptOut": "false",
+						"UnsubscribedMode": "",
+						"UnsubscribedTime": "",
+						"DateOfBirth": "10-06-1999",
+						"LastName": "",
+						"FirstName": "Lakshmi",
+						"MobileNo": "7879809898",
+						"UHID": "",
+						"PreferredCommLanguage": "",
+						"ActivePatient": "false",
+						"Deceased": "false",
+						"DateTimeOfDecease": "",
+						"GuardianFirstName": "Gokul",
+						"OrganizationName": "",
+						"Role": "",
+						"ContactPerson": "",
+						"ContactPersonMobileNo": "",
+						"GuardianMobileNo": "9979809898",
+						"Address": "dsdssdsdds",
+						"City": "",
+						"State": "",
+						"PostalCode": "324323",
+						"PaymentCategory": "",
+						"SponsorInfo": "",
+						"Sponsors": "",
+						"PatientDetailsScore": "",
+						"Industry": "",
+						"Gender": "Female",
+						"PatientCategory": "",
+						"BloodGroup": "A+",
+						"MaritalStatus": "",
+						"Relationships": "Brother",
+						"Age": "25",
+						"Phone": "7879809898",
+						"FullName": "Lakshmi "
+					}
+				},
+				"category": null
+			}
+		]
+	}
+]

@@ -1,0 +1,41 @@
+{
+	"shopify": [
+		{
+			"key": "meta.shopify.orders_count",
+			"type": "number",
+			"label": "Orders Count"
+		},
+		{
+			"key": "meta.shopify.total_spent",
+			"type": "number",
+			"label": "Total Spent"
+		},
+		{
+			"key": "meta.shopify.last_order_id",
+			"type": "string",
+			"label": "Last Order ID"
+		},
+		{
+			"key": "meta.shopify.last_order_name",
+			"type": "string",
+			"label": "Last Order Name"
+		},
+		{
+			"key": "meta.shopify.admin_graphql_api_id",
+			"type": "string",
+			"label": "Admin GraphQL API ID"
+		},
+		{
+			"key": "meta.shopify.currency",
+			"type": "string",
+			"label": "Currency"
+		}
+	],
+	"perpooja": [
+		{
+			"key": "some_perpooja_field",
+			"type": "string",
+			"label": "Some Perpooja Field"
+		}
+	]
+}

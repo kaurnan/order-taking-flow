@@ -1,0 +1,59 @@
+version: '3.8'
+services:
+  redis:
+    image: redis:6-alpine
+    container_name: flowflex-redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    networks:
+      - default
+
+  nats:
+    image: nats:2-alpine
+    container_name: flowflex-nats
+    restart: unless-stopped
+    ports:
+      - "4222:4222"
+    networks:
+      - default
+
+  temporal:
+    image: temporalio/auto-setup:1.22.4
+    container_name: flowflex-temporal
+    restart: unless-stopped
+    ports:
+      - "7233:7233"
+      - "8080:8080"
+    environment:
+      - DB=postgresql
+      - DB_PORT=5432
+      - POSTGRES_USER=temporal
+      - POSTGRES_PWD=temporal
+      - POSTGRES_SEEDS=postgresql
+    depends_on:
+      - postgresql
+    networks:
+      - default
+
+  postgresql:
+    image: postgres:13
+    container_name: flowflex-postgresql
+    restart: unless-stopped
+    environment:
+      - POSTGRES_USER=temporal
+      - POSTGRES_PASSWORD=temporal
+      - POSTGRES_DB=temporal
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - default
+
+volumes:
+  postgres_data:
+
+networks:
+  default:
+    driver: bridge

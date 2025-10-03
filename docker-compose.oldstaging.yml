@@ -1,0 +1,141 @@
+services:
+  api:
+    build:
+      context: .
+    image: moleculer-ums-gateway
+    env_file: docker-compose.env
+    environment:
+      SERVICES: api
+      PORT: 6000
+    depends_on:
+      - nats
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.api-gw.rule=PathPrefix(`/`)"
+      - "traefik.http.services.api-gw.loadbalancer.server.port=6000"
+    ports:
+      - "6000:6000"
+      - "3100:3100" # For BullMQ Dashboard
+    networks:
+      - internal
+
+  flowflex-common:
+    build:
+      context: .
+    image: moleculer-flowflex
+    env_file: docker-compose.env
+    environment:
+      SERVICES: communication/interakt,ums/ums_organisation,utility/channel,utility/branch,utility/agent,utility/bulkaction,customer/customer,customer/list,customer/segment,customer/tag,utility/getstarted,utility/custom_folders,customer/customerexport,utility/workers,utility/dynamicfield,broadcast/broadcast_overview,integration/integrations,utility/notification
+    depends_on:
+      - nats
+    networks:
+      - internal
+
+  flowflex-notification:
+    build:
+      context: .
+    image: moleculer-flowflex-notification
+    env_file: docker-compose.env
+    environment:
+      SERVICES: communication/email,communication/whatsapp,integration/supabase,broadcast/broadcast,broadcast/broadcast_stats,integration/gcp,campaign/timeline
+    depends_on:
+      - nats
+    networks:
+      - internal
+
+  flowflex-transaction:
+    build:
+      context: .
+    image: moleculer-flowflex-transactions
+    env_file: docker-compose.env
+    environment:
+      SERVICES: payment/transaction,payment/phonepe,payment/pricing
+    depends_on:
+      - nats
+    networks:
+      - internal
+
+  flowflex-payment:
+    build:
+      context: .
+    image: moleculer-flowflex-payment
+    env_file: docker-compose.env
+    environment:
+      SERVICES: payment/wallet,payment/razorpay,billing/daily_usage,billing/monthly_usage,billing/invoice
+    depends_on:
+      - nats
+    networks:
+      - internal
+
+  flowflex-ums:
+    build:
+      context: .
+    image: moleculer-flowflex-ums
+    env_file: docker-compose.env
+    environment:
+      SERVICES: ums/ums_default_roles,ums/ums_organisation,ums/ums_password_reset,ums/ums_roles,ums/ums_scopes,ums/ums_user_organisations,ums/ums_user,ums/ums_verify
+    depends_on:
+      - nats
+    networks:
+      - internal
+
+  flowflex-shopifyconnector:
+    build:
+      context: .
+    image: moleculer-flowflex-shopifyconnector
+    env_file: docker-compose.env
+    environment:
+      SERVICES: integration/shopify
+    depends_on:
+      - nats
+    networks:
+      - internal
+
+  flowflex-flow:
+    build:
+      context: .
+    image: moleculer-flowflex-flow
+    env_file: docker-compose.env
+    environment:
+      SERVICES: flow/flow,flow/flow_stats,utility/pubsub,flow/default_flows,flow/subflow,flow/campaign,flow/trigger,flow/reactflow,flow/flowstore_template
+    depends_on:
+      - nats
+    networks:
+      - internal
+  flowstore:
+    build:
+      context: .
+    image: moleculer-flowstore
+    env_file: docker-compose.env
+    environment:
+      SERVICES: flow/flowstore_category,flow/flowstore_tags,flow/flowstorecreator,flow/flowstoreflows,flow/flowstorelist,flow/flowstoreplatform
+    depends_on:
+      - nats
+    networks:
+      - internal
+
+  # mongo:
+  #   image: mongo:4
+  #   volumes:
+  #     - data:/data/db
+  #   networks:
+  #     - internal
+  #     - common_redis_net
+  redis:
+    image: redis:6
+    container_name: moleculer-flowflex-redis
+    restart: unless-stopped
+    networks:
+      - internal
+
+  nats:
+    image: nats:2
+    networks:
+      - internal
+
+networks:
+  internal:
+    driver: bridge
+
+volumes:
+  data:
